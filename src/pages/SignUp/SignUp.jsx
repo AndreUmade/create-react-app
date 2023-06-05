@@ -116,7 +116,7 @@ const SignUp = () => {
             I agree to the{" "}
             <a href="" className="signup_checkbox_link">
               Terms
-            </a>
+            </a>{" "}
             and{" "}
             <a href="" className="signup_checkbox_link1">
               Conditions
@@ -124,16 +124,13 @@ const SignUp = () => {
           </label>
         </div>
 
-        <button className="signup_button">
-          <h6 className="signup_button_text">Login</h6>
-        </button>
+        <a className="signup_button" href={"/loginsuccessful"}>
+          <h6 className="signup_button_text">SignUp</h6>
+        </a>
 
         <p className="signup_link_signup">
           Already have an account?
-          <a
-            href={process.env.PUBLIC_URL + "login"}
-            className="signup_link_signup1"
-          >
+          <a href={"/login"} className="signup_link_signup1">
             Sign in
           </a>{" "}
         </p>

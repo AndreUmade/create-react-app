@@ -25,7 +25,7 @@ const CongratsPage = () => {
                 we confirm your identity.
               </p>
             </div>
-            <a className="congrats_case_btn">
+            <a className="congrats_case_btn" href={"/home"}>
               <h6 className="congrats_case_btn_text">Continue</h6>
             </a>
           </div>

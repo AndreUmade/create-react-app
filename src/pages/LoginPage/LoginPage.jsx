@@ -90,7 +90,9 @@ const LoginPage = () => {
         </label>
       </div>
 
-      <a className="login_forget_text">Forget Password?</a>
+      <a className="login_forget_text" href={""}>
+        Forget Password?
+      </a>
 
       <div className="login_second_frame">
         <img

@@ -524,7 +524,7 @@
   font-size: 20px;
   line-height: 30px;
   /* identical to box height */
-
+  text-decoration: none;
   color: #ffffff;
 
   /* Inside auto layout */

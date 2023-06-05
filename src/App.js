@@ -10,14 +10,16 @@ import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import SignUp from "./pages/SignUp/SignUp";
 import CongratsPage from "./pages/CongratulationPage/CongratsPage";
+import Profile from "./pages/other Pages/Profile";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route index element={<HomePage />} />
-      <Route path="/login" element={<LoginPage />} />
+      <Route index element={<LoginPage />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/loginsuccessful" element={<CongratsPage />} />
+      <Route path="/home" element={<HomePage />} />
+      <Route path="/profile" element={<Profile />} />
     </Route>
   )
 );
