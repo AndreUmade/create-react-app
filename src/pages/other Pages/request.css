@@ -1,0 +1,90 @@
+.home_request_active {
+  width: 240px;
+  height: 63px;
+  position: relative;
+  background: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.home_request_text_active {
+  width: 66px;
+  height: 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #110b65;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.request_list_main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 1076px;
+  height: 502px;
+  left: 283px;
+  top: 155px;
+}
+
+.request_list_service {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 1076px;
+  height: 239px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.home_service_request3_case {
+  width: 257px;
+  height: 239px;
+  background: #fcfcfd;
+  position: relative;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.request_list_service1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 1076px;
+  height: 239px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

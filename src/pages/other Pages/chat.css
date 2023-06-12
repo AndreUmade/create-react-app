@@ -1,0 +1,648 @@
+.home_chat_active {
+  width: 240px;
+  height: 63px;
+  position: relative;
+  background: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.home_chat_text_active {
+  width: 49px;
+  height: 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #110b65;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.message_list_side {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 359px;
+  height: 910px;
+  left: 240px;
+  top: 114px;
+
+  border-right: 0.5px solid #707070;
+}
+
+.message_list_person {
+  position: absolute;
+  width: 350px;
+  height: 84px;
+  left: 5px;
+  top: 101px;
+}
+
+.message_list_img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 25px;
+  top: 12px;
+}
+
+.message_list_text_case {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  position: absolute;
+  width: 189px;
+  height: 48px;
+  left: 109px;
+  top: 18px;
+}
+
+.message_list_pack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+
+  width: 182px;
+  height: 22px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.message_list_text {
+  width: 152px;
+  height: 22px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+  text-align: center;
+
+  color: #191919;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.message_list_text_img {
+  width: 18px;
+  height: 18px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.message_list_text1 {
+  width: 189px;
+  height: 22px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  text-align: center;
+
+  color: #565656;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.message_chat_text {
+  position: absolute;
+  width: 61px;
+  height: 30px;
+  left: 34px;
+  top: 41px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.message_chat_img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 238px;
+  top: 44px;
+}
+
+.message_chat_img1 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 288px;
+  top: 44px;
+}
+
+.message_chat_entry {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 14px;
+
+  position: absolute;
+  width: 268px;
+  height: 50px;
+  left: 625px;
+  top: 127px;
+}
+
+.message_chat_entry_img {
+  width: 50px;
+  height: 50px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.message_chat_entry_text {
+  width: 204px;
+  height: 36px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.chat_box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 14px;
+
+  position: absolute;
+  width: 149px;
+  height: 70px;
+  left: 625px;
+  top: 235px;
+}
+
+.chat_box_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  width: 149px;
+  height: 70px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chat_box_case {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 9px;
+
+  width: 51px;
+  height: 18px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chat_box_case_text {
+  width: 31px;
+  height: 18px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chat_box_case_text1 {
+  width: 11px;
+  height: 12px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 12px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.chat_box_message {
+  width: 149px;
+  height: 48px;
+
+  background: #d5d4d9;
+  border-radius: 0px 8px 8px 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.chat_box_message_text {
+  position: absolute;
+  width: 124px;
+  height: 18px;
+  left: 11px;
+  top: 35px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #110b65;
+}
+
+.chat_box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  position: absolute;
+  width: 280px;
+  height: 168px;
+  left: 1100px;
+  top: 305px;
+
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.chat_box_case1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 9px;
+
+  width: 39px;
+  height: 18px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chat_box_case_text2 {
+  width: 19px;
+  height: 18px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chat_box_case_text3 {
+  width: 11px;
+  height: 12px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 12px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.chat_box_message1 {
+  width: 280px;
+  height: 146px;
+
+  background: #d5d4d9;
+  border-radius: 0px 8px 8px 8px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.chat_box_message_text1 {
+  position: absolute;
+  width: 252px;
+  height: 125px;
+  left: 19px;
+  top: 20px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  /* or 208% */
+
+  color: #110b65;
+}
+
+.chat_box2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 14px;
+
+  position: absolute;
+  width: 422px;
+  height: 252px;
+  left: 625px;
+  top: 507px;
+}
+
+.chat_box2_img {
+  width: 30px;
+  height: 30px;
+
+  background: #292d32;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chat_box_frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  width: 378px;
+  height: 252px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.chat_box_case2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 9px;
+
+  width: 51px;
+  height: 18px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chat_box_case_text4 {
+  width: 31px;
+  height: 18px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chat_box_case_text5 {
+  width: 11px;
+  height: 12px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 12px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.chat_box_message2 {
+  width: 378px;
+  height: 230px;
+
+  background: #d5d4d9;
+  border-radius: 0px 8px 8px 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.chat_box_message_text2 {
+  position: absolute;
+  width: 351px;
+  height: 200px;
+  left: 60px;
+  top: 50px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  /* or 208% */
+
+  color: #110b65;
+}
+
+.chat_input_field_case {
+  position: relative;
+  width: 776px;
+  height: 100px;
+  left: 625px;
+  top: 910px;
+
+  background: #fcfcfd;
+}
+
+.chat_input_field {
+  position: absolute;
+  width: 776px;
+  height: 80px;
+
+  padding-right: 130px;
+  padding-left: 60px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.chat_input_field_img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 26px;
+  top: 28px;
+}
+
+.chat_input_field_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 30px;
+  gap: 10px;
+
+  position: absolute;
+  width: 96px;
+  height: 45px;
+  left: 659px;
+  top: 17px;
+
+  background: #292d32;
+}
+
+.chat_input_field_text {
+  width: 36px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

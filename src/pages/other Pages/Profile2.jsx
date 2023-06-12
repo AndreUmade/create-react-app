@@ -1,7 +1,7 @@
 import React from "react";
-import "./profile.css";
+import "./profile2.css";
 
-const Profile = () => {
+const Profile2 = () => {
   return (
     <div className="home_main">
       <div className="home_sidenav">
@@ -119,7 +119,7 @@ const Profile = () => {
       </div>
 
       <div className="profile_category">
-        <div className="profile_category_line"></div>
+        <div className="profile_category_line1"></div>
         <p className="profile_category_text">Info</p>
         <p className="profile_category_text1">Photos and Videos</p>
         <p className="profile_category_text2">Achievements</p>
@@ -128,49 +128,31 @@ const Profile = () => {
       <a className="profile_save">
         <h6 className="profile_save_text">save</h6>
       </a>
+      <p className="profile_photos_page">Photos</p>
+      <p className="profile_videos_page">Videos</p>
 
-      <img
-        className="profile_pictures"
-        src="./Frame 258.svg"
-        alt="profile img"
-      />
-      <img
-        className="profile_picture_item1"
-        src="./Frame 336.svg"
-        alt="camera img"
-      />
-
-      <div className="profile_input_field">
-        <div className="profile_input_name">
-          <p className="profile_input_name_text">Name</p>
-          <input className="profile_input_name_field" placeholder="Andrew" />
-          <input className="profile_input_name_field1" placeholder="Tate" />
-        </div>
-
-        <div className="profile_input_location">
-          <p className="profile_input_location_text">Location</p>
-          <input className="profile_input_location_field" placeholder="Lagos" />
-        </div>
-
-        <div className="profile_input_specialization">
-          <p className="profile_input_specialization_text">Specialization</p>
-          <input
-            className="profile_input_specialization_field"
-            placeholder="Mechanic"
+      <div className="profile_upload_main">
+        <div className="profile_photos_case">
+          <img
+            className="profile_photos_img"
+            src={"./camera.svg"}
+            alt="camera png"
           />
+          <p className="profile_photos_text">Upload or Drag and Drop photo</p>
         </div>
+      </div>
 
-        <div className="profile_input_price">
-          <p className="profile_input_price_text">Price</p>
-          <input className="profile_input_price_field" placeholder="20" />
-        </div>
-
-        <div className="profile_input_description">
-          <p className="profile_input_description_text">Description</p>
-          <input className="profile_input_description_field" />
+      <div className="profile_videos_main">
+        <div className="profile_videos_case">
+          <img
+            className="profile_videos_img"
+            src={"./video.svg"}
+            alt="video png"
+          />
+          <p className="profile_videos_text">Upload or Drag and Drop photo</p>
         </div>
       </div>
     </div>
   );
 };
-export default Profile;
+export default Profile2;
