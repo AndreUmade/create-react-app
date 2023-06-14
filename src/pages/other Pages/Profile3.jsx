@@ -120,10 +120,10 @@ const Profile3 = () => {
 
       <div className="profile_category">
         <div className="profile_category_line2"></div>
-        <a href={""} className="profile_category_text_2">
+        <a href={"/profile"} className="profile_category_text_2">
           Info
         </a>
-        <a href={""} className="profile_category_text1">
+        <a href={"/profile2"} className="profile_category_text1">
           Photos and Videos
         </a>
         <div className="profile_category_text2_active">Achievements</div>
