@@ -9,6 +9,8 @@
 html {
   font-size: 62.5%; /* to make 1rem = 10px => 16px / 10 = 0.625 => 62.5% of current browser default */
   max-width: 100%;
+  height: 100vh;
+   width: 100vw;
 }
 
 body {

@@ -6,7 +6,7 @@ const HomePage = () => {
     <div className="home_main">
       <div className="home_sidenav">
         <div className="home_navs">
-          <div className="home_dashboard">
+          <a href={"/dashboard"} className="home_dashboard">
             <div className="home_dashboard_case">
               <img
                 src={"./dashboard.svg"}
@@ -15,9 +15,9 @@ const HomePage = () => {
               />
               <p className="home_dashboard_text">Dashboard</p>
             </div>
-          </div>
+          </a>
 
-          <div className="home_profile">
+          <a href={"/profile"} className="home_profile">
             <div className="home_profile_case">
               <img
                 src={"./profile.svg"}
@@ -26,9 +26,9 @@ const HomePage = () => {
               />
               <p className="home_profile_text">Profile</p>
             </div>
-          </div>
+          </a>
 
-          <div className="home_request">
+          <a href={"/request"} className="home_request">
             <div className="home_request_case">
               <img
                 src={"./request.svg"}
@@ -37,9 +37,9 @@ const HomePage = () => {
               />
               <p className="home_request_text">Request</p>
             </div>
-          </div>
+          </a>
 
-          <div className="home_chat">
+          <a href={"/chat"} className="home_chat">
             <div className="home_chat_case">
               <img
                 src={"./messages.svg"}
@@ -48,9 +48,9 @@ const HomePage = () => {
               />
               <p className="home_chat_text">Chats</p>
             </div>
-          </div>
+          </a>
 
-          <div className="home_transact">
+          <a href={"/wallet"} className="home_transact">
             <div className="home_transact_case">
               <img
                 src={"./transaction.svg"}
@@ -59,7 +59,7 @@ const HomePage = () => {
               />
               <p className="home_transact_text">Transaction</p>
             </div>
-          </div>
+          </a>
 
           <div className="home_setting">
             <div className="home_setting_case">
@@ -74,7 +74,7 @@ const HomePage = () => {
         </div>
         <img
           className="home_logo"
-          src={process.env.PUBLIC_URL + "logo 2.svg"}
+          src={"./logo 2.svg"}
           alt="logo"
         />
       </div>
@@ -89,9 +89,9 @@ const HomePage = () => {
         />
         <img className="dashboard_main_img" src="./search-normal.svg" alt="" />
 
-        <div className="dashboard_bell">
+        <a className="dashboard_bell" href={"null"}>
           <img className="dashboard_bell_img" src="./notification.svg" alt="" />
-        </div>
+        </a>
 
         <div className="dashboard_notif">
           <img className="dashboard_notif_img" src="./Frame 258.svg" alt="" />
@@ -103,6 +103,33 @@ const HomePage = () => {
               alt="arrow-down png"
             />
           </label>
+          <div className="notif_dropdown">
+            <div className="notif_dropdown_case">
+              <a
+                className="notif_dropdown_style"
+                href={process.env.PUBLIC_URL + "profile"}
+              >
+                <img
+                  className="notif_dropdown_img"
+                  src={process.env.PUBLIC_URL + "profile dropdown.svg"}
+                  alt="padlock png"
+                />
+                <p className="notif_dropdown_text">Profile</p>
+              </a>
+              <div className="notif_dropdown_line"></div>
+              <a
+                className="notif_dropdown_style1"
+                href={process.env.PUBLIC_URL + "login"}
+              >
+                <img
+                  className="notif_dropdown_img1"
+                  src={process.env.PUBLIC_URL + "logout dropdown.svg"}
+                  alt="logout png"
+                />
+                <p className="notif_dropdown_text1">Log out</p>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="home_metrics">

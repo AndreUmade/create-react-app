@@ -6,7 +6,7 @@ const Profile = () => {
     <div className="home_main">
       <div className="home_sidenav">
         <div className="home_navs">
-          <div className="home_dashboard_inactive">
+          <a href={"/home"} className="home_dashboard_inactive">
             <div className="home_dashboard_case">
               <img
                 src={"./dashboard-inactive.svg"}
@@ -15,9 +15,9 @@ const Profile = () => {
               />
               <p className="home_dashboard_text_inactive">Dashboard</p>
             </div>
-          </div>
+          </a>
 
-          <div className="home_profile_page">
+          <a href={"/profile"} className="home_profile_page">
             <div className="home_profile_case">
               <img
                 src={"./profile-active.svg"}
@@ -26,9 +26,9 @@ const Profile = () => {
               />
               <p className="home_profile_text_page">Profile</p>
             </div>
-          </div>
+          </a>
 
-          <div className="home_request">
+          <a href={"/request"} className="home_request">
             <div className="home_request_case">
               <img
                 src={"./request.svg"}
@@ -37,9 +37,9 @@ const Profile = () => {
               />
               <p className="home_request_text">Request</p>
             </div>
-          </div>
+          </a>
 
-          <div className="home_chat">
+          <a href={"/chat"} className="home_chat">
             <div className="home_chat_case">
               <img
                 src={"./messages.svg"}
@@ -48,9 +48,9 @@ const Profile = () => {
               />
               <p className="home_chat_text">Chats</p>
             </div>
-          </div>
+          </a>
 
-          <div className="home_transact">
+          <a href={"/wallet"} className="home_transact">
             <div className="home_transact_case">
               <img
                 src={"./transaction.svg"}
@@ -59,7 +59,7 @@ const Profile = () => {
               />
               <p className="home_transact_text">Transaction</p>
             </div>
-          </div>
+          </a>
 
           <div className="home_setting">
             <div className="home_setting_case">
@@ -121,8 +121,12 @@ const Profile = () => {
       <div className="profile_category">
         <div className="profile_category_line"></div>
         <p className="profile_category_text">Info</p>
-        <p className="profile_category_text1">Photos and Videos</p>
-        <p className="profile_category_text2">Achievements</p>
+        <a href={"/profile2"} className="profile_category_text1">
+          Photos and Videos
+        </a>
+        <a href={"/profile3"} className="profile_category_text2">
+          Achievements
+        </a>
       </div>
 
       <a className="profile_save">

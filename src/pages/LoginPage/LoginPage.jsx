@@ -7,7 +7,7 @@ const LoginPage = () => {
       <div className="login_first_frme">
         <img
           className="login_logo"
-          src={process.env.PUBLIC_URL + "Logo.svg"}
+          src={ "./Logo.svg"}
           alt="logo"
         />
         <p className="login_text">Login to your account</p>
@@ -49,30 +49,27 @@ const LoginPage = () => {
         </div>
 
         <div className="login_options_socials">
-          <div className="login_google">
+          <a href={"www.gmail.com"} className="login_google">
             <img
               className="login_google_img"
-              src={process.env.PUBLIC_URL + "google-icon.svg"}
+              src={"./google-icon.svg"}
               alt="google"
             />
-          </div>
-          <div className="login_facebook">
+          </a>
+          <a href={"www.facebook.com"} className="login_facebook">
             <img
               className="login_facebook_img"
-              src={process.env.PUBLIC_URL + "facebook-solid.svg"}
+              src={"./facebook-solid.svg"}
               alt="facebook"
             />
-          </div>
+          </a>
         </div>
 
         <p className="login_link_signup">
           Don’t have an account?
-          <a
-            href={process.env.PUBLIC_URL + "signup"}
-            className="login_link_signup1"
-          >
+          <a href={"/signup"} className="login_link_signup1">
             Sign up
-          </a>{" "}
+          </a>
         </p>
       </div>
 
@@ -80,25 +77,22 @@ const LoginPage = () => {
         <input
           className="login_checkbox_input"
           type="checkbox"
-          id="vehicle2"
-          name="vehicle2"
-          value="Car"
+          id="tick"
+          name="tick"
+          value="tick"
         />
         <label className="login_checkbox_text" for="tick">
-          {" "}
           Remember me
         </label>
       </div>
 
-      <a className="login_forget_text" href={""}>
-        Forget Password?
-      </a>
+      <a className="login_forget_text">Forget Password?</a>
 
       <div className="login_second_frame">
         <img
           className="login_second_img"
-          src={process.env.PUBLIC_URL + "login main.svg"}
-          alt=""
+          src={"./login main.svg"}
+          alt="frame"
         />
       </div>
     </div>
