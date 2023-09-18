@@ -3,97 +3,121 @@ import "./loginpage.css";
 
 const LoginPage = () => {
   return (
-    <div className="login_empty_main">
-      <div className="login_first_frme">
-        <img
-          className="login_logo"
-          src={ "./Logo.svg"}
-          alt="logo"
-        />
-        <p className="login_text">Login to your account</p>
-        <div className="login_input_frame">
-          <div className="login_input_email">
-            <label for="email" className="login_input_email_text">
-              Email
-            </label>
-            <input
-              className="login_input_email_input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="johndoe@gmail.com"
-            ></input>
-          </div>
-          <div className="login_input_password">
-            <label for="pwd" className="login_input_password_text">
-              Password
-            </label>
-            <input
-              className="login_input_password_field"
-              type="password"
-              name="pwd"
-              id="pwd"
-              placeholder="••••••••••"
-            ></input>
-          </div>
-        </div>
-
-        <a className="login_button" href={"/loginsuccessful"}>
-          <h6 className="login_button_text">Login</h6>
-        </a>
-
-        <div className="login_options">
-          <div className="login_options_line"></div>
-          <p className="login_options_text">Continue with</p>
-          <div className="login_options_line1"></div>
-        </div>
-
-        <div className="login_options_socials">
-          <a href={"www.gmail.com"} className="login_google">
+    <div className="container-fluid">
+      <div className="row ">
+        <div className="col login_first ">
+          <div className="login_logo">
             <img
-              className="login_google_img"
-              src={"./google-icon.svg"}
-              alt="google"
+              className="login_logo_img img-fluid"
+              src={"./logo.svg"}
+              alt="logo"
             />
+          </div>
+          <div className="login_text_frame">
+            <p className="login_text text-wrap">Login to your account</p>
+          </div>
+
+          <form className="login_form">
+            <div className="mb-3 login_email_frame form-group">
+              <label
+                for="exampleFormControlInput1"
+                className="form-label login_email_text"
+              >
+                Email address
+              </label>
+              <input
+                type="email"
+                className="form-control col-sm-2 login_email_input "
+                id="exampleFormControlInput1"
+                placeholder="johndoe@gmail.com"
+              ></input>
+            </div>
+
+            <div className="mb-3 login_password_frame form-group">
+              <label
+                for="inputPassword5"
+                className="form-label login_password_text"
+              >
+                Password
+              </label>
+              <input
+                type="password"
+                id="inputPassword5 is-valid"
+                className="form-control col-sm-2 login_password_input"
+                aria-labelledby="passwordHelpBlock"
+              ></input>
+              <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long
+              </div>
+            </div>
+          </form>
+          <div class="form-check login_checkbox_frame">
+            <input
+              class="form-check-input login_checkbox_input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            ></input>
+            <label
+              class="form-check-label login_checkbox_text"
+              for="flexCheckDefault"
+            >
+              Remember me
+            </label>
+          </div>
+          <a href={"/forgotpassword"} className="login_forgot">
+            Forgot password?
           </a>
-          <a href={"www.facebook.com"} className="login_facebook">
-            <img
-              className="login_facebook_img"
-              src={"./facebook-solid.svg"}
-              alt="facebook"
-            />
-          </a>
+
+          <div className="button_login">
+            <a
+              type="submit"
+              class="col-sm-offset-2 col-sm-10 button_frame"
+              href={"/loginsuccessful"}
+            >
+              <p className="login_button_text">Login</p>
+            </a>
+          </div>
+
+          <div className="login_continue container">
+            <img className="continue_left" src={"./Vector 3.svg"} alt="logo" />
+            <p className="continue_text">Continue with</p>
+            <img className="continue_right" src={"./Vector 3.svg"} alt="logo" />
+          </div>
+
+          <div className="login_socials">
+            <a href="www.google.com" className="login_socials_google">
+              <img
+                className="login_google img-fluid"
+                src={"./google-icon.svg"}
+                alt="logo"
+              />
+            </a>
+            <a href={"www.fb.com"} className="login_socials_facebook">
+              <img
+                className="login_facebook img-fluid"
+                src={"./facebook-solid.svg"}
+                alt="logo"
+              />
+            </a>
+          </div>
+
+          <p className="login_sign">
+            Don’t have an account?
+            <a href={"/signup"} className="login_sign_text">
+              {" "}
+              Sign up
+            </a>
+          </p>
         </div>
 
-        <p className="login_link_signup">
-          Don’t have an account?
-          <a href={"/signup"} className="login_link_signup1">
-            Sign up
-          </a>
-        </p>
-      </div>
-
-      <div className="login_checkbox">
-        <input
-          className="login_checkbox_input"
-          type="checkbox"
-          id="tick"
-          name="tick"
-          value="tick"
-        />
-        <label className="login_checkbox_text" for="tick">
-          Remember me
-        </label>
-      </div>
-
-      <a className="login_forget_text">Forget Password?</a>
-
-      <div className="login_second_frame">
-        <img
-          className="login_second_img"
-          src={"./login main.svg"}
-          alt="frame"
-        />
+        <div className="col relative container login_second d-none d-lg-block d-xl-block">
+          <img
+            className="login_second_img object-fit-fill "
+            src={"./signup main.svg"}
+            alt="signup frame"
+          />
+        </div>
       </div>
     </div>
   );

@@ -16,6 +16,10 @@ import Profile3 from "./pages/other Pages/Profile3";
 import Request from "./pages/other Pages/Request";
 import Chat from "./pages/other Pages/Chats";
 import Transaction from "./pages/other Pages/Transaction";
+import ForgotPassword from "./pages/other Pages/ForgotPassword";
+import EmailConfirmation from "./pages/other Pages/EmailConfirmatiom";
+import Passwordreset from "./pages/other Pages/PasswordReset";
+import Services from "./pages/other Pages/Services";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -24,12 +28,16 @@ const routes = createBrowserRouter(
       <Route path="/signup" element={<SignUp />} />
       <Route path="/loginsuccessful" element={<CongratsPage />} />
       <Route path="/home" element={<HomePage />} />
+      <Route path="/services" element={<Services />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/profile2" element={<Profile2 />} />
       <Route path="/profile3" element={<Profile3 />} />
       <Route path="/request" element={<Request />} />
       <Route path="/chat" element={<Chat />} />
       <Route path="/wallet" element={<Transaction />} />
+      <Route path="/forgotpassword" element={<ForgotPassword />} />
+      <Route path="/emailconfirmation" element={<EmailConfirmation />} />
+      <Route path="/passwordreset" element={<Passwordreset />} />
     </Route>
   )
 );

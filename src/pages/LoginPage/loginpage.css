@@ -1,490 +1,274 @@
-.login_empty_main {
-    position: relative;
-
-    height: 1024px;
-    width: 1490px;
-    background: #FFFFFF;
-}
-
-.login_first_frme{
-    position: absolute;
-    width: 708px;
-    height: 1024px;
-    left: 0px;
-    top: 0px;
-    
-    background: #FDFDFF;
-}
-
 .login_logo {
-    position: absolute;
-    width: 132px;
-    height: 40px;
-    left: 82px;
-    top: 51px;
-    
+  left: 82px;
+  position: relative;
+  top: 51px;
+}
+
+.login_first {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.login_logo_img {
+  width: 132px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.login_text_frame {
+  position: relative;
+  left: 82px;
+  top: 90px;
 }
 
 .login_text {
-    position: absolute;
-    width: 352px;
-    height: 38px;
-    left: 82px;
-    top: 174px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 38px;
-    /* identical to box height, or 119% */
-    
-    
-    color: #110B65;    
+  color: #110b65;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px; /* 118.75% */
 }
 
-.login_input_frame {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-    
-    position: absolute;
-    width: 410px;
-    height: 220px;
-    left: 83px;
-    top: 250px;
-    
+.login_form {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  top: 150px;
+  left: 83px;
+  width: 410px;
+  height: 220px;
+  justify-content: right;
 }
 
-.login_input_email {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
-    
-    width: 410px;
-    height: 98px;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.login_email_frame {
+  display: block;
+  width: 414px;
+  height: 98px;
 }
 
-.login_input_email_text {
-    width: 55px;
-    height: 30px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height */
-    
-    
-    color: #191919;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.login_email_text {
+  color: #191919;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.login_input_email_input {
-    box-sizing: border-box;
-
-    width: 410px;
-    height: 56px;
-    
-    border: 1px solid #787599;
-    border-radius: 8px;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+.login_email_input {
+  width: 410px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #787599;
 }
 
-.login_input_email_input ::placeholder {
-    position: absolute;
-    width: 190px;
-    height: 21px;
-    left: 18px;
-    top: 18px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    /* identical to box height */
-    
-    
-    color: #737373;
-    
+.login_password_frame {
+  display: block;
+  width: 414px;
+  height: 98px;
 }
 
-.login_input_password {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
-    
-    width: 410px;
-    height: 98px;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+.login_password_text {
+  color: #191919;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.login_input_password_text {
-    width: 97px;
-    height: 30px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height */
-    
-    
-    color: #191919;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.login_password_input {
+  width: 410px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #787599;
 }
 
-.login_input_password_field {
-    box-sizing: border-box;
-
-    width: 410px;
-    height: 56px;
-    
-    border: 1px solid #110B65;
-    border-radius: 8px;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.login_input_password::placeholder {
-    position: absolute;
-    width: 39px;
-    height: 21px;
-    left: 15px;
-    top: 17px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    /* identical to box height */
-    
-    
-    color: #737373;
-}
-
-.login_checkbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 12px;
-    
-    position: absolute;
-    width: 141px;
-    height: 24px;
-    left: 83px;
-    top: 500px;
+.login_checkbox_frame {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  top: 519px;
+  left: 90px;
 }
 
 .login_checkbox_input {
-    width: 24px;
-    height: 24px;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #110b65;
+  color: #d9d9d9;
 }
 
 .login_checkbox_text {
-    width: 105px;
-    height: 21px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    /* identical to box height */
-    
-    
-    color: #565656;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  color: #565656;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.login_forget_text {
-    position: absolute;
-    width: 123px;
-    height: 21px;
-    left: 370px;
-    top: 499px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    /* identical to box height */
-    
-    
-    color: #000000;
+.login_forgot {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 525px;
+  /* width: 123px; */
+  /* display: block; */
+  height: 21px;
+  left: 400px;
+  text-decoration: none;
 }
 
-.login_button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 18px 165px 18px 168px;
-    gap: 10px;
-    
-    position: absolute;
-    width: 413px;
-    height: 66px;
-    left: 81px;
-    top: 597px;
-    
-    background: #110B65;
-    border-radius: 8px;
+.button_login {
+  position: absolute;
+  top: 597px;
+  left: 90px;
+}
+
+.button_frame {
+  border-radius: 8px;
+  background: #110b65;
+  display: flex;
+  width: 413px;
+  height: 66px;
+  padding: 30px 165px 18px 168px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
 }
 
 .login_button_text {
-    width: 54px;
-    height: 30px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height */
-    
-    
-    color: #FFFFFF;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.login_options {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 18px;
-    
-    position: absolute;
-    width: 414px;
-    height: 30px;
-    left: 82px;
-    top: 730px;
-    
+.login_continue {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  position: absolute;
+  top: 700px;
+  left: 90px;
+  width: 414px;
+  height: 81px;
 }
 
-.login_options_line {
-    width: 120px;
-    height: 0px;
-    
-    border: 1px solid #C3C2C2;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.continue_left {
+  width: 120px;
+  height: 0px;
+  stroke-width: 1px;
+  border: 1px solid #c3c2c2;
 }
 
-.login_options_text {
-    width: 138px;
-    height: 30px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height */
-    
-    
-    color: #000000;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+.continue_text {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  top: 5px;
 }
 
-.login_options_line1 {
-    width: 120px;
-    height: 0px;
-    right: 20px;
-    border: 1px solid #C3C2C2;
-    
-    /* Inside auto layout */
-    position: relative;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+.continue_right {
+  width: 120px;
+  height: 0px;
+  stroke-width: 1px;
+  border: 1px solid #c3c2c2;
 }
 
-.login_options_socials {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 39px;
-    
-    position: absolute;
-    width: 169px;
-    height: 50px;
-    left: 205px;
-    top: 784px;
-    
+.login_socials {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 39px;
+  left: 220px;
+  top: 780px;
+  position: absolute;
+}
+
+.login_socials_google {
+  display: flex;
+  width: 65px;
+  height: 50px;
+  padding: 9px 16.733px 9px 17px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
 }
 
 .login_google {
-    box-sizing: border-box;
-
-    width: 65px;
-    height: 50px;
-    
-    border: 1px solid #D9D9D9;
-    border-radius: 10px;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  width: 31.267px;
+  height: 32px;
+  flex-shrink: 0;
 }
 
-.login_google_img {
-    position: absolute;
-    width: 31.27px;
-    height: 32px;
-    left: 17px;
-    top: 9px;
-    
+.login_socials_facebook {
+  display: flex;
+  width: 65px;
+  height: 50px;
+  padding: 9px 16px 9px 17px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
 }
 
 .login_facebook {
-    box-sizing: border-box;
-
-    width: 65px;
-    height: 50px;
-    
-    border: 1px solid #D9D9D9;
-    border-radius: 10px;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
 }
 
-.login_facebook_img {
-    position: relative;
-    width: 32px;
-    height: 32px;
-    left: 17px;
-    top: 9px;
-    
+.login_sign {
+  position: absolute;
+  top: 870px;
+  left: 200px;
+  color: #434343;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.login_link_signup {
-    position: absolute;
-    width: 270px;
-    height: 30px;
-    left: 155px;
-    top: 858px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    
-    color: #434343;
-    
+.login_sign_text {
+  color: #110b65;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
 }
 
-.login_link_signup1 {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #110B65;
-    text-decoration: none;
-    
+.login_second {
+  display: flex;
+  width: 730px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
 }
-
-.login_second_frame {
-    position: absolute;
-    width: 708px;
-    height: 1024px;
-    left: 708px;
-    top: 0px;
-    
-    background: #929292;
-}
-
 
 .login_second_img {
-    position: relative;
-    height: 1024px;
-    top: 0px;
-    
+  height: 1024px;
+  width: 100%;
 }

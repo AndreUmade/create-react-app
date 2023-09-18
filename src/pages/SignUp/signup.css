@@ -1,27 +1,16 @@
-.signup_filled_main {
-  position: relative;
-  width: 1440px;
-  height: 1350px;
-
-  background: #ffffff;
-}
-
-.signup_first_frame {
-  position: absolute;
-  width: 708px;
-  height: 1280px;
-  left: 0px;
-  top: 0px;
-
-  background: #fdfdff;
-}
-
 .signup_logo {
   position: absolute;
   width: 132px;
   height: 40px;
   left: 78px;
   top: 65px;
+}
+
+.signup_first {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
 }
 
 .signup_text {
@@ -42,11 +31,10 @@
 }
 
 .signup_input_frame {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
+  gap: 20px;
 
   position: absolute;
   width: 410px;
@@ -56,20 +44,11 @@
 }
 
 .signup_input_name {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-
+  display: block;
   width: 410px;
   height: 98px;
 
   /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .signup_input_name_text {
@@ -110,12 +89,7 @@
 }
 
 .signup_input_lname {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-
+  display: block;
   width: 410px;
   height: 98px;
 
@@ -163,12 +137,7 @@
 }
 
 .signup_input_email {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-
+  display: block;
   width: 410px;
   height: 98px;
 
@@ -216,12 +185,7 @@
 }
 
 .signup_input_phone {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-
+  display: block;
   width: 410px;
   height: 98px;
 
@@ -269,11 +233,7 @@
 }
 
 .signup_input_state {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
+  display: block;
 
   width: 410px;
   height: 98px;
@@ -322,12 +282,7 @@
 }
 
 .signup_input_special {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-
+  display: block;
   width: 410px;
   height: 98px;
 
@@ -375,12 +330,7 @@
 }
 
 .signup_input_password {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-
+  display: block;
   width: 410px;
   height: 98px;
 
@@ -439,8 +389,8 @@
   position: absolute;
   width: 288px;
   height: 24px;
-  left: 79px;
-  top: 1100px;
+  left: 105px;
+  top: 1190px;
 }
 
 .signup_checkbox_input {
@@ -448,7 +398,7 @@
   height: 24px;
 
   /* Inside auto layout */
-  background: #565656;
+
   border-radius: 4px;
   flex: none;
   order: 0;
@@ -508,8 +458,8 @@
   width: 413px;
   height: 66px;
   left: 79px;
-  top: 1150px;
-
+  top: 1250px;
+  text-decoration: none;
   background: #110b65;
   border-radius: 8px;
 }
@@ -524,7 +474,7 @@
   font-size: 20px;
   line-height: 30px;
   /* identical to box height */
-  text-decoration: none;
+
   color: #ffffff;
 
   /* Inside auto layout */
@@ -539,7 +489,7 @@
   width: 276px;
   height: 27px;
   left: 151px;
-  top: 1250px;
+  top: 1330px;
 
   font-family: "Poppins";
   font-style: normal;
@@ -615,16 +565,13 @@
 }
 
 .signup_second_frame {
-  position: absolute;
-  width: 732px;
-  height: 1350px;
-  left: 708px;
-  top: 0px;
+  display: flex;
+  width: 730px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
 }
 
 .signup_second_img {
-  position: absolute;
-  width: 732px;
-  height: 1350px;
-  top: 0px;
+  width: 100%;
 }

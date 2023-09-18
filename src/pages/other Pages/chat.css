@@ -1,3 +1,59 @@
+.home_chat {
+  width: 240px;
+  height: 63px;
+  position: relative;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.home_chat_case {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  position: absolute;
+  width: 85px;
+  height: 24px;
+  left: 55px;
+  top: 19px;
+}
+
+.home_chat_img {
+  width: 24px;
+  height: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.home_chat_text {
+  width: 49px;
+  height: 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #b9b9b9;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
 .home_chat_active {
   width: 240px;
   height: 63px;

@@ -1,8 +1,10 @@
+/* congratspage.css */
+
+/* Common styles for all screen sizes */
 .congrats_main {
   position: relative;
   width: 100%;
-  height: 1024px;
-
+  min-height: 100vh; /* Set a minimum height to ensure the page covers the full viewport height */
   background: #ffffff;
 }
 
@@ -10,8 +12,8 @@
   position: absolute;
   width: 132px;
   height: 40px;
-  left: 79px;
-  top: 81px;
+  left: 5%;
+  top: 10%;
 }
 
 .congrats_case_main {
@@ -19,16 +21,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 42px 26px;
-  gap: 18px;
-
-  position: absolute;
-  width: 326px;
-  height: 390px;
-  left: 557px;
-  top: 280px;
-
-  background: #fafafa;
+  padding: 15% 10%;
   border-radius: 10px;
 }
 
@@ -36,28 +29,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 2% 0;
   gap: 18px;
-
-  width: 274px;
-  height: 306px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  background: #fafafa;
 }
 
 .congrats_case_img {
   width: 106px;
   height: 106px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .congrats_form_frame {
@@ -66,15 +45,6 @@
   align-items: center;
   padding: 0px;
   gap: 18px;
-
-  width: 274px;
-  height: 182px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .congrats_frame {
@@ -83,99 +53,74 @@
   align-items: center;
   padding: 0px;
   gap: 18px;
-
-  width: 241px;
-  height: 106px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .congrats_frame_text {
-  width: 174px;
-  height: 22px;
-
+  width: 80%;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 22px;
-  /* identical to box height, or 110% */
-
   text-align: center;
-
   color: #000000;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .congrats_frame_text1 {
-  width: 241px;
-  height: 66px;
-
+  width: 80%;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  /* or 157% */
-
   text-align: center;
-
   color: #565656;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .congrats_case_btn {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 18px 90px;
-  gap: 10px;
-
-  width: 274px;
-  height: 58px;
-
+  align-items: center;
+  justify-content: center;
+  padding: 2% 5%;
   background: #110b65;
   border-radius: 10px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  text-decoration: none;
 }
 
 .congrats_case_btn_text {
-  width: 94px;
-  height: 22px;
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 22px;
-  /* identical to box height, or 110% */
-
   text-align: center;
-
   color: #ffffff;
+}
 
-  /* Inside auto layout */
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .congrats_case_main {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+  }
+}
 
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  .congrats_case_main {
+    width: 80%;
+    left: 20%;
+    top: 60%;
+  }
+}
+
+.congrats_img {
+  position: absolute;
+  width: 132px;
+  height: 40px;
+  left: 5%;
+  top: 5%;
 }

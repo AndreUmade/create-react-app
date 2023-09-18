@@ -1,0 +1,53 @@
+.email_confirm_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15% 10%;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.email_confirm_text {
+  color: #110b65;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px; /* 118.75% */
+}
+
+.email_confirm_text1 {
+  color: #565656;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 296px;
+}
+
+.email_confirm_button {
+  display: flex;
+  width: 413px;
+  height: 46px;
+  padding: 18px 120px 18px 120px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #110b65;
+  text-decoration: none;
+}
+
+.email_confirm_button_text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 10px;
+}

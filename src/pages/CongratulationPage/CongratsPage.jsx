@@ -3,9 +3,9 @@ import "./congratspage.css";
 
 const CongratsPage = () => {
   return (
-    <div className="congrats_main">
+    <div className="container-fluid">
       <img
-        className="congrats_img"
+        className="congrats_img "
         src={process.env.PUBLIC_URL + "Logo.svg"}
         alt="logo"
       />

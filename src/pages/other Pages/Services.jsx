@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./homepage.css";
+import "./services.css";
 
-const HomePage = () => {
+const Services = () => {
   const [showSidebar, setShowSidebar] = useState(true);
 
   const toggleSidebar = () => {
@@ -23,25 +23,25 @@ const HomePage = () => {
               src={"./logo 2.svg"}
               alt="logo"
             />
-            <a href={"/home"} className="home_dashboard nav-item">
+            <a href={"/home"} className="home_dashboard1 nav-item">
               <div className="home_dashboard_case">
                 <img
-                  src={"./dashboard.svg"}
+                  src={"./element-4.svg"}
                   className="home_dashboard_img"
                   alt="logo"
                 />
-                <p className="home_dashboard_text">Dashboard</p>
+                <p className="home_dashboard_text1">Dashboard</p>
               </div>
             </a>
 
-            <a href={"/services"} className="home_profile nav-item">
-              <div className="home_profile_case">
+            <a href={"/services"} className="home_profile1 nav-item">
+              <div className="home_profile_case1">
                 <img
-                  src={"./task-square1.svg"}
+                  src={"./task-square.svg"}
                   className="home_profile_img"
                   alt="dashboard"
                 />
-                <p className="home_profile_text">Services</p>
+                <p className="home_profile_text1">Services</p>
               </div>
             </a>
 
@@ -95,12 +95,13 @@ const HomePage = () => {
       <div className={`main-container ${showSidebar ? "shift-container" : ""}`}>
         <div className="dashboard_main container-fluid">
           <div className="dashboard_text_case">
-            <p className="dashboard_header1">Hi Jane,👋</p>
-            <p className="dashboard_header2 ">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit, primis
-              curae cras auctor nam per, at nisl parturient.
-            </p>
+            <p className="dashboard_Services_text">Category</p>
           </div>
+          <img
+            src={"./search_normal.svg"}
+            className="dashboard_search"
+            alt="search"
+          />
           <input
             className="dashboard_main_Input"
             type="text"
@@ -152,129 +153,187 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-
-        <div className="responsive-container ">
-          <div className="services_dashboard">
-            <p className="services_text">Services</p>
-            <p className="services_text1">see all</p>
+        {/*----- first top -----*/}
+        <div className="responsive-container1">
+          <div className="category_items">
+            <div className="category_all"></div>
+            <p className="category_all_text">All</p>
           </div>
-          <div className="main-services">
-            <div className="mechanic_service">
-              <div className="mechanic_service1">
-                <div className="mechanic_service_frame">
-                  <img
-                    className="mechanic_service_img"
-                    src={process.env.PUBLIC_URL + "mechanic.svg"}
-                    alt="mechanic png"
-                  />
-                </div>
-                <p className="mechanic_service_text">Mechanics</p>
-              </div>
+          <div className="category_items">
+            <div className="category_home">
+              <img
+                className="category_home_img"
+                src={"./broom 1.svg"}
+                alt=" png"
+              />
             </div>
-
-            <div className="mechanic_service">
-              <div className="mechanic_service1">
-                <div className="mechanic_service_frame">
-                  <img
-                    className="mechanic_service_img"
-                    src={process.env.PUBLIC_URL + "hairdresser.svg"}
-                    alt="mechanic png"
-                  />
-                </div>
-                <p className="mechanic_service_text">Barber</p>
-              </div>
+            <p className="category_all_text">Home Cleaning</p>
+          </div>
+          <div className="category_items">
+            <div className="category_home">
+              <img
+                className="category_tailor_img"
+                src={"./sewing.svg"}
+                alt=" png"
+              />
             </div>
-
-            <div className="mechanic_service_one">
-              <div className="mechanic_service1">
-                <div className="mechanic_service_frame">
-                  <img
-                    className="mechanic_service_img"
-                    src={process.env.PUBLIC_URL + "air-conditioner 1.svg"}
-                    alt="mechanic png"
-                  />
-                </div>
-                <p className="mechanic_service_text">AC Repairer</p>
-              </div>
+            <p className="category_all_text">Tailoring</p>
+          </div>{" "}
+          <div className="category_items">
+            <div className="category_home">
+              <img
+                className="category_barber_img"
+                src={"./hairdresser.svg"}
+                alt=" png"
+              />
             </div>
-
-            <div className="mechanic_service_two">
-              <div className="mechanic_service1">
-                <div className="mechanic_service_frame">
-                  <img
-                    className="mechanic_service_img"
-                    src={process.env.PUBLIC_URL + "broom 1.svg"}
-                    alt="mechanic png"
-                  />
-                </div>
-                <p className="mechanic_service_text">Home Cleaning</p>
-              </div>
+            <p className="category_all_text">Barber</p>
+          </div>{" "}
+          <div className="category_items">
+            <div className="category_home">
+              <img
+                className="category_repair_img"
+                src={"./air-conditioner 1.svg"}
+                alt=" png"
+              />
             </div>
-
-            <div className="mechanic_service_three">
-              <div className="mechanic_service1">
-                <div className="mechanic_service_frame">
-                  <img
-                    className="mechanic_service_img"
-                    src={process.env.PUBLIC_URL + "sewing.svg"}
-                    alt="mechanic png"
-                  />
-                </div>
-                <p className="mechanic_service_text">Fashion Designer</p>
-              </div>
+            <p className="category_all_text">AC Repairer</p>
+          </div>{" "}
+          <div className="category_items">
+            <div className="category_home">
+              <img
+                className="category_mechanic_img"
+                src={"./mechanic.svg"}
+                alt=" png"
+              />
             </div>
+            <p className="category_all_text">Mechanic</p>
+          </div>
+          <div className="category_items">
+            <div className="category_home"></div>
+            <p className="category_all_text">Cobbler</p>
           </div>
         </div>
 
-        {/*----- wallet -----*/}
+        {/*----- Saved Jobs -----*/}
 
-        <p className="smaller_screen_text">Hi Jane,👋</p>
-        <p className="smaller_screen_text1">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, primis curae
-          cras auctor nam per, at nisl parturient.
-        </p>
-
-        <div className="wallet_balance_main">
-          <div className="wallet_balance_frame">
-            <img
-              className="wallet_balance_img"
-              src={process.env.PUBLIC_URL + "wallet-money1.svg"}
-              alt="wallet png"
-            />
-          </div>
-          <p className="wallets_balance_text">#32,000.00</p>
-          <p className="wallets_balance_text1">Your balance</p>
-
-          <div className="wallet_topup_main">
-            <div className="wallet_topup_frame">
-              <div className="wallet_topup">
-                <div className="wallet_topup_img_case">
+        <div className="service_saved">
+          <div className="service_saved_frame">
+            <p className="service_saved_text">Saved Jobs</p>
+            <div className="service_saved_case">
+              <div className="service_saved_sub">
+                <div className="service_sub_case">
                   <img
-                    className="wallets_topup_img"
-                    src={"./card-receive.svg"}
-                    alt="wallet png"
+                    className="service_saved_img"
+                    src={"./Frame 86.svg"}
+                    alt=" png"
                   />
+                  <div className="service_sublet">
+                    <div className="service_sublet_case">
+                      <div className="service_sublet_main">
+                        <p className="service_sublet_text">Adewale Adeniyi</p>
+                        <img
+                          className="service_sublet_img"
+                          src={"./verify2.svg"}
+                          alt=" png"
+                        />
+                      </div>
+
+                      <p className="service_sublet_text1">
+                        Motor mechanics (Toyota)
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <p className="wallets_topup_text">Top-up</p>
               </div>
-              <div className="wallets_withdraw">
-                <div className="wallet_withdraw_img_case">
+              {/* ----second table*/}
+
+              <div className="service_saved_sub">
+                <div className="service_sub_case">
                   <img
-                    className="wallets_withdraw_img"
-                    src={"./card-send.svg"}
-                    alt="wallet png"
+                    className="service_saved_img"
+                    src={"./Frame 87.svg"}
+                    alt=" png"
                   />
+                  <div className="service_sublet">
+                    <div className="service_sublet_case">
+                      <div className="service_sublet_main">
+                        <p className="service_sublet_text">Adewale Adeniyi</p>
+                        <img
+                          className="service_sublet_img"
+                          src={"./verify2.svg"}
+                          alt=" png"
+                        />
+                      </div>
+
+                      <p className="service_sublet_text1">
+                        Motor mechanics (Toyota)
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <p className="wallets_withdraw_text">Withdraw</p>
+              </div>
+
+              {/* ----Third table*/}
+
+              <div className="service_saved_sub">
+                <div className="service_sub_case">
+                  <img
+                    className="service_saved_img"
+                    src={"./Frame 86.svg"}
+                    alt=" png"
+                  />
+                  <div className="service_sublet">
+                    <div className="service_sublet_case">
+                      <div className="service_sublet_main">
+                        <p className="service_sublet_text">Mitch Aloo</p>
+                        <img
+                          className="service_sublet_img"
+                          src={"./verify2.svg"}
+                          alt=" png"
+                        />
+                      </div>
+
+                      <p className="service_sublet_text1">
+                        Motor mechanics (Toyota)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="service_saved_sub">
+                <div className="service_sub_case">
+                  <img
+                    className="service_saved_img"
+                    src={"./Frame 86.svg"}
+                    alt=" png"
+                  />
+                  <div className="service_sublet">
+                    <div className="service_sublet_case">
+                      <div className="service_sublet_main">
+                        <p className="service_sublet_text">Adewale Adeniyi</p>
+                        <img
+                          className="service_sublet_img"
+                          src={"./verify2.svg"}
+                          alt=" png"
+                        />
+                      </div>
+
+                      <p className="service_sublet_text1">
+                        Motor mechanics (Toyota)
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         {/* ----Recommend technicians*/}
-        <div className="recommended_main">
+        <div className="recommended_main1">
           <div className="recommended_main_frame">
-            <p className="recommended_main_text">Recommended Technician</p>
             <div className="recommend_case">
               <div className="technician_one">
                 <img
@@ -755,4 +814,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Services;
