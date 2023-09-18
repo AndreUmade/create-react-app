@@ -1,0 +1,818 @@
+.home_transact_active {
+  width: 240px;
+  height: 63px;
+  position: relative;
+  background: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+
+.home_transact_text_active {
+  width: 97px;
+  height: 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #110b65;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.wallet_balance_wrapper {
+  position: absolute;
+  width: 521px;
+  height: 218px;
+  left: 264px;
+  top: 144px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 4px 1px rgba(17, 11, 101, 0.1);
+  border-radius: 8px;
+}
+
+.wallet_balance_text {
+  position: absolute;
+  width: 186px;
+  height: 48px;
+  left: 30px;
+  top: 98px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height */
+
+  color: #110b65;
+}
+
+.wallet_balance_text1 {
+  position: absolute;
+  width: 120px;
+  height: 27px;
+  left: 30px;
+  top: 146px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #110b65;
+}
+
+.wallet_balance_img_wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 30px;
+  top: 30px;
+
+  background: #fcfcfd;
+  border-radius: 100px;
+}
+
+.wallet_balance_img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 13px;
+  top: 13px;
+}
+
+.wallet_services {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 204px;
+  height: 98px;
+  left: 283px;
+  top: 60px;
+}
+
+.wallet_services_topup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+
+  width: 90px;
+  height: 98px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.wallet_topup_wrapper {
+  width: 90px;
+  height: 70px;
+
+  background: #e6eaee;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.wallet_topup_img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 33px;
+  top: 23px;
+}
+
+.wallet_topup_text {
+  width: 60px;
+  height: 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #110b65;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.wallet_services_withdraw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+
+  width: 90px;
+  height: 98px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.wallet_withdraw_wrapper {
+  width: 90px;
+  height: 70px;
+
+  background: #e6eaee;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.wallet_withdraw_img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  left: 33px;
+  top: 23px;
+}
+
+.wallet_withdraw_text {
+  width: 77px;
+  height: 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #110b65;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.wallet_bar {
+  position: absolute;
+  width: 1143px;
+  height: 90px;
+  left: 264px;
+  top: 383px;
+
+  background: #ffffff;
+}
+
+.wallet_bar_input {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 14px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #adadad;
+
+  position: absolute;
+  width: 325px;
+  height: 48px;
+  left: 27px;
+  top: 21px;
+
+  background: #ffffff;
+  border: 0.3px solid #e6eaee;
+  box-shadow: 0px 1px 8px rgba(86, 86, 86, 0.1);
+  border-radius: 8px;
+}
+
+.wallet_bar_img {
+  width: 24px;
+  height: 24px;
+
+  /* Inside auto layout */
+  order: 0;
+  position: relative;
+  left: 40px;
+  flex-grow: 0;
+  top: 33px;
+}
+
+.wallet_bar_input1 {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 19px;
+
+  position: absolute;
+  width: 145px;
+  height: 48px;
+  left: 396px;
+  top: 21px;
+
+  background: #ffffff;
+  border: 0.3px solid #e6eaee;
+  box-shadow: 0px 1px 8px rgba(86, 86, 86, 0.1);
+  border-radius: 8px;
+}
+
+.wallet_bar_input2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 19px;
+
+  position: absolute;
+  width: 174px;
+  height: 48px;
+  left: 585px;
+  top: 21px;
+
+  background: #ffffff;
+  border: 0.3px solid #e6eaee;
+  box-shadow: 0px 1px 8px rgba(86, 86, 86, 0.1);
+  border-radius: 8px;
+}
+
+.wallet_bar_input2_img {
+  width: 24px;
+  height: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.wallet_bar_input2_text {
+  width: 91px;
+  height: 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #adadad;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.wallet_bar_input1-font {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #adadad;
+}
+
+.transaction_id_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 24px;
+
+  position: absolute;
+  width: 1143px;
+  height: 583px;
+  left: 264px;
+  top: 476px;
+
+  background: #ffffff;
+}
+
+.transaction_id_list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 130px;
+
+  width: 1087px;
+  height: 21px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.transaction_id_text {
+  width: 102px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.transaction_id_text1 {
+  width: 78px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.transaction_id_text2 {
+  width: 34px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.transaction_id_text3 {
+  width: 121px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.transaction_id_text4 {
+  width: 45px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+
+.transaction_id_text5 {
+  width: 57px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+}
+
+.transaction_id_header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 1095px;
+  height: 490px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.transaction_header_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 1095px;
+  height: 98px;
+  position: relative;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.transaction_header_list1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 1095px;
+  height: 98px;
+  position: relative;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.transaction_header_list2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 1095px;
+  height: 98px;
+  position: relative;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.transaction_header_list3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 1095px;
+  height: 98px;
+  position: relative;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.transaction_header_list4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 1095px;
+  height: 98px;
+  position: relative;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+
+.transaction_header_item {
+  box-sizing: border-box;
+
+  width: 1095px;
+  height: 98px;
+
+  border-width: 0.5px 0px;
+  border-style: solid;
+  border-color: #d9d9d9;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.transaction_header_item1 {
+  position: absolute;
+  width: 52px;
+  height: 18px;
+  left: 0px;
+  top: 36px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.transaction_header_item2 {
+  position: absolute;
+  width: 113px;
+  height: 18px;
+  left: 411px;
+  top: 40px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.transaction_header_item3 {
+  position: absolute;
+  width: 55px;
+  height: 18px;
+  left: 636px;
+  top: 40px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.transaction_header_item4 {
+  position: absolute;
+  width: 57px;
+  height: 18px;
+  left: 1033px;
+  top: 40px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.transaction_header_item5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 134px;
+  height: 40px;
+  left: 220px;
+  top: 25px;
+}
+
+.transaction_header_item5_img {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 100px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.transaction_item_case {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 86px;
+  height: 33px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.transaction_item_case_text {
+  width: 31px;
+  height: 18px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.transaction_item_case_text1 {
+  width: 86px;
+  height: 15px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.transaction_header_item6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 14px;
+  gap: 10px;
+
+  position: absolute;
+  width: 55px;
+  height: 30px;
+  left: 852px;
+  top: 34px;
+
+  background: #000000;
+  border-radius: 25px;
+}
+
+.transaction_header_item6_text {
+  width: 27px;
+  height: 18px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

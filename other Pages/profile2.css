@@ -1,0 +1,147 @@
+.profile_category_line1 {
+  position: absolute;
+  width: 184px;
+  height: 0px;
+  left: 270px;
+  top: 49.5px;
+
+  border: 1px solid #110b65;
+}
+
+.profile_photos_page {
+  position: absolute;
+  width: 68px;
+  height: 30px;
+  left: 293px;
+  top: 258px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.profile_videos_page {
+  position: absolute;
+  width: 58px;
+  height: 30px;
+  left: 657px;
+  top: 258px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.profile_upload_main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+
+  position: absolute;
+  width: 255px;
+  height: 172px;
+  left: 293px;
+  top: 328px;
+}
+
+.profile_photos_case {
+  width: 255px;
+  height: 172px;
+
+  background: #fcfcfd;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.profile_photos_img {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: 102px;
+  top: 34px;
+}
+
+.profile_photos_text {
+  position: absolute;
+  width: 109px;
+  height: 36px;
+  left: 73px;
+  top: 101px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.profile_videos_main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+
+  position: absolute;
+  width: 255px;
+  height: 172px;
+  left: 657px;
+  top: 328px;
+}
+
+.profile_videos_case {
+  width: 255px;
+  height: 172px;
+
+  background: #fcfcfd;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.profile_videos_img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 102px;
+  top: 34px;
+}
+
+.profile_videos_text {
+  position: absolute;
+  width: 106px;
+  height: 36px;
+  left: 75px;
+  top: 101px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #000000;
+}

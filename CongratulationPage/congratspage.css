@@ -1,0 +1,126 @@
+/* congratspage.css */
+
+/* Common styles for all screen sizes */
+.congrats_main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Set a minimum height to ensure the page covers the full viewport height */
+  background: #ffffff;
+}
+
+.congrats_img {
+  position: absolute;
+  width: 132px;
+  height: 40px;
+  left: 5%;
+  top: 10%;
+}
+
+.congrats_case_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15% 10%;
+  border-radius: 10px;
+}
+
+.congrats_case {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 0;
+  gap: 18px;
+  background: #fafafa;
+}
+
+.congrats_case_img {
+  width: 106px;
+  height: 106px;
+}
+
+.congrats_form_frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 18px;
+}
+
+.congrats_frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 18px;
+}
+
+.congrats_frame_text {
+  width: 80%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.congrats_frame_text1 {
+  width: 80%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #565656;
+}
+
+.congrats_case_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 5%;
+  background: #110b65;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.congrats_case_btn_text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .congrats_case_main {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  .congrats_case_main {
+    width: 80%;
+    left: 20%;
+    top: 60%;
+  }
+}
+
+.congrats_img {
+  position: absolute;
+  width: 132px;
+  height: 40px;
+  left: 5%;
+  top: 5%;
+}
