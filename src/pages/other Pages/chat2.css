@@ -1,0 +1,236 @@
+.chat2_Services_text {
+  color: #000;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  top: 40px;
+}
+
+.chat2_main {
+  width: 78%;
+  height: 844px;
+  position: absolute;
+  left: 20%;
+  top: 150px;
+}
+
+.chat2_top {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+}
+
+.chat2_img {
+  width: 30px;
+  height: 30px;
+}
+
+.chat2_img1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: lightgray 50% / cover no-repeat, #d9d9d9;
+}
+
+.chat2_text {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  left: 120px;
+  top: 10px;
+}
+
+.chat2_img2 {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+
+.chat2_textbox {
+  display: inline-flex;
+  padding: 9px 11px 9px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 8px 8px 8px;
+  background: rgba(172, 171, 180, 0.5);
+  position: absolute;
+  top: 120px;
+  left: 5px;
+}
+
+.chat2_textbox_text {
+  color: #110b65;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chat2_textbox1 {
+  display: inline-flex;
+  padding: 9px 13px 9px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 8px 8px 8px;
+  background: #d5d4d9;
+  position: absolute;
+  top: 220px;
+  right: 10px;
+}
+
+.chat2_textbox1_text {
+  color: #110b65;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chat2_textbox2 {
+  display: inline-flex;
+  padding: 9px 13px 9px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 8px 8px 8px;
+  background: #d5d4d9;
+  position: absolute;
+  top: 300px;
+  right: 10px;
+}
+
+.chat2_textbox2_text {
+  color: #110b65;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chat2_textbox3 {
+  display: inline-flex;
+  padding: 9px 20px 9px 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1px;
+  border-radius: 0px 8px 8px 8px;
+  background: rgba(172, 171, 180, 0.5);
+  position: absolute;
+  top: 400px;
+  left: 10px;
+}
+
+.chat2_textbox3_text {
+  width: 252px;
+  color: #110b65;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 208.333% */
+}
+
+.chat2_input_case {
+  display: inline-flex;
+  padding: 17px 21px 18px 26px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 95%;
+  position: relative;
+  top: 780px;
+}
+
+.chat2_input {
+  display: inline-flex;
+  padding: 17px 21px 18px 26px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  border: none;
+  background: #fcfcfd;
+  padding-left: 60px;
+}
+
+.chat_input_field_img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50px;
+  top: 35px;
+}
+
+.chat2_input_button {
+  display: flex;
+  padding: 5px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  background: #292d32;
+  text-decoration: none;
+  position: absolute;
+  right: 30px;
+  justify-content: center;
+  align-self: center;
+}
+
+.chat2_input_text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1220px) {
+  .chat2_Services_text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    top: 30px;
+  }
+
+  .chat2_main {
+    width: 70%;
+    height: 844px;
+    position: absolute;
+    left: 26%;
+    top: 150px;
+  }
+}
+
+@media screen and (max-width: 938px) {
+  .chat2_main {
+    width: 90%;
+    height: 844px;
+    position: absolute;
+    left: 5%;
+    top: 120px;
+  }
+  .chat2_Services_text {
+    display: none;
+  }
+}

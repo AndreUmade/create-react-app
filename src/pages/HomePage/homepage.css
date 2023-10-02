@@ -4,6 +4,7 @@
   height: 100vh;
   padding-right: 0;
   background: #fcfcfd;
+  padding-bottom: 50px;
 }
 
 /* Sidebar.css */
@@ -1289,8 +1290,11 @@ input:checked ~ .notif_dropdown {
   .sidebar {
     width: 100%;
     height: auto;
-    background-color: #110b65;
     z-index: 1;
+  }
+
+  .home_logo {
+    display: none;
   }
 
   .sidebar.show-sidebar {
@@ -1304,11 +1308,14 @@ input:checked ~ .notif_dropdown {
   }
 
   .sidebar-nav {
-    display: none;
+    position: absolute;
+    background-color: #110b65;
+    left: -30px;
+    top: 50px;
   }
 
   .sidebar.show-sidebar .sidebar-nav {
-    display: flex;
+    display: block;
   }
   .dashboard_main {
     display: inline;
@@ -1558,6 +1565,7 @@ input:checked ~ .notif_dropdown {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    padding-bottom: 100px;
   }
 
   .technician_one,
@@ -1567,7 +1575,7 @@ input:checked ~ .notif_dropdown {
     padding: 12px 52px 12px 25px;
     align-items: flex-start;
     gap: 24px;
-    width: 210%;
+    width: 205%;
     height: 100px;
     background: #fcfcfd;
     box-shadow: none;

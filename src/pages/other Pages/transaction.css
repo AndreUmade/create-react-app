@@ -1,3 +1,20 @@
+.home_chat_active {
+  display: flex;
+  padding: 19px 52px 20px 55px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.home_chat_text_active {
+  color: #110b65;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .home_transact_active {
   width: 240px;
   height: 63px;
@@ -228,7 +245,7 @@
 
 .wallet_bar {
   position: absolute;
-  width: 1143px;
+  width: 883px;
   height: 90px;
   left: 264px;
   top: 383px;
@@ -367,12 +384,12 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 24px;
-  gap: 24px;
+  gap: 18px;
 
   position: absolute;
-  width: 1143px;
+  width: 880px;
   height: 583px;
-  left: 264px;
+  left: 18%;
   top: 476px;
 
   background: #ffffff;
@@ -383,9 +400,9 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  gap: 130px;
+  gap: 110px;
 
-  width: 1087px;
+  width: 880px;
   height: 21px;
 
   /* Inside auto layout */
@@ -521,7 +538,7 @@
   align-items: flex-start;
   padding: 0px;
 
-  width: 1095px;
+  width: 980px;
   height: 490px;
 
   /* Inside auto layout */
@@ -537,7 +554,7 @@
   align-items: flex-start;
   padding: 0px;
 
-  width: 1095px;
+  width: 980px;
   height: 98px;
   position: relative;
   /* Inside auto layout */
@@ -553,7 +570,7 @@
   align-items: flex-start;
   padding: 0px;
 
-  width: 1095px;
+  width: 980px;
   height: 98px;
   position: relative;
   /* Inside auto layout */
@@ -569,7 +586,7 @@
   align-items: flex-start;
   padding: 0px;
 
-  width: 1095px;
+  width: 980px;
   height: 98px;
   position: relative;
   /* Inside auto layout */
@@ -585,7 +602,7 @@
   align-items: flex-start;
   padding: 0px;
 
-  width: 1095px;
+  width: 980px;
   height: 98px;
   position: relative;
   /* Inside auto layout */
@@ -601,7 +618,7 @@
   align-items: flex-start;
   padding: 0px;
 
-  width: 1095px;
+  width: 980px;
   height: 98px;
   position: relative;
   /* Inside auto layout */
@@ -614,7 +631,7 @@
 .transaction_header_item {
   box-sizing: border-box;
 
-  width: 1095px;
+  width: 980px;
   height: 98px;
 
   border-width: 0.5px 0px;
@@ -649,7 +666,7 @@
   position: absolute;
   width: 113px;
   height: 18px;
-  left: 411px;
+  left: 370px;
   top: 40px;
 
   font-family: "Poppins";
@@ -666,7 +683,7 @@
   position: absolute;
   width: 55px;
   height: 18px;
-  left: 636px;
+  left: 570px;
   top: 40px;
 
   font-family: "Poppins";
@@ -683,7 +700,7 @@
   position: absolute;
   width: 57px;
   height: 18px;
-  left: 1033px;
+  left: 930px;
   top: 40px;
 
   font-family: "Poppins";
@@ -706,7 +723,7 @@
   position: absolute;
   width: 134px;
   height: 40px;
-  left: 220px;
+  left: 180px;
   top: 25px;
 }
 
@@ -751,7 +768,7 @@
   /* identical to box height */
 
   color: #000000;
-
+  position: absolute;
   /* Inside auto layout */
 
   flex: none;
@@ -771,9 +788,9 @@
   /* identical to box height */
 
   color: #000000;
-
+  position: absolute;
   /* Inside auto layout */
-
+  top: 25px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -790,7 +807,7 @@
   position: absolute;
   width: 55px;
   height: 30px;
-  left: 852px;
+  left: 765px;
   top: 34px;
 
   background: #000000;
@@ -809,10 +826,52 @@
   /* identical to box height */
 
   color: #ffffff;
-
+  position: absolute;
   /* Inside auto layout */
-
+  top: 5px;
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+@media screen and (max-width: 1220px) {
+  .transaction_id_text,
+  .transaction_id_text3,
+  .transaction_id_text2,
+  .transaction_header_item1,
+  .transaction_header_item2,
+  .transaction_header_item3 {
+    display: none;
+  }
+
+  transaction_id_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+
+    position: absolute;
+    width: 400px;
+    height: 583px;
+    left: 15%;
+    top: 476px;
+
+    background: #ffffff;
+  }
+
+  .transaction_id_list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+
+    height: 21px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
 }

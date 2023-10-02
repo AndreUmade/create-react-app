@@ -15,6 +15,7 @@ import Profile2 from "./pages/other Pages/Profile2";
 import Profile3 from "./pages/other Pages/Profile3";
 import Request from "./pages/other Pages/Request";
 import Chat from "./pages/other Pages/Chats";
+import Chat2 from "./pages/other Pages/Chat2";
 import Transaction from "./pages/other Pages/Transaction";
 import ForgotPassword from "./pages/other Pages/ForgotPassword";
 import EmailConfirmation from "./pages/other Pages/EmailConfirmatiom";
@@ -34,6 +35,8 @@ const routes = createBrowserRouter(
       <Route path="/profile3" element={<Profile3 />} />
       <Route path="/request" element={<Request />} />
       <Route path="/chat" element={<Chat />} />
+      <Route path="/chat2" element={<Chat2 />} />
+
       <Route path="/wallet" element={<Transaction />} />
       <Route path="/forgotpassword" element={<ForgotPassword />} />
       <Route path="/emailconfirmation" element={<EmailConfirmation />} />

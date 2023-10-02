@@ -155,7 +155,7 @@ const Chat = () => {
         </div>
         {/*----- first top -----*/}
         <div className="message_list_side">
-          <div className="message_list_person">
+          <a href={"/chat2"} className="message_list_person">
             <img
               className="message_list_img"
               src={"./Ellipse 12.svg"}
@@ -163,7 +163,7 @@ const Chat = () => {
             />
             <div className="message_list_text_case">
               <div className="message_list_pack">
-                <p className="message_list_text">Andrew Tate</p>
+                <p className="message_list_text">Andrew Adeniyi</p>
                 <img
                   className="message_list_text_img"
                   src={"./verify.svg"}
@@ -172,8 +172,64 @@ const Chat = () => {
               </div>
               <p className="message_list_text1">Motor mechanics (Toyota)</p>
             </div>
-          </div>
+          </a>
 
+          <a href={"/chat2"} className="message_list_person1">
+            <img
+              className="message_list_img"
+              src={"./Ellipse 12.svg"}
+              alt="profile picture png"
+            />
+            <div className="message_list_text_case">
+              <div className="message_list_pack">
+                <p className="message_list_text">Andrew Adeniyi</p>
+                <img
+                  className="message_list_text_img"
+                  src={"./verify.svg"}
+                  alt="verify png"
+                />
+              </div>
+              <p className="message_list_text1">Motor mechanics (Toyota)</p>
+            </div>
+          </a>
+
+          <a href={"/chat2"} className="message_list_person2">
+            <img
+              className="message_list_img"
+              src={"./Ellipse 12.svg"}
+              alt="profile picture png"
+            />
+            <div className="message_list_text_case">
+              <div className="message_list_pack">
+                <p className="message_list_text">Andrew Adeniyi</p>
+                <img
+                  className="message_list_text_img"
+                  src={"./verify.svg"}
+                  alt="verify png"
+                />
+              </div>
+              <p className="message_list_text1">Motor mechanics (Toyota)</p>
+            </div>
+          </a>
+
+          <a href={"/chat2"} className="message_list_person3">
+            <img
+              className="message_list_img"
+              src={"./Ellipse 12.svg"}
+              alt="profile picture png"
+            />
+            <div className="message_list_text_case">
+              <div className="message_list_pack">
+                <p className="message_list_text">Andrew Adeniyi</p>
+                <img
+                  className="message_list_text_img"
+                  src={"./verify.svg"}
+                  alt="verify png"
+                />
+              </div>
+              <p className="message_list_text1">Motor mechanics (Toyota)</p>
+            </div>
+          </a>
           <p className="message_chat_text">Chat</p>
           <img className="message_chat_img" src={"./star.svg"} alt="star png" />
           <img
@@ -183,72 +239,72 @@ const Chat = () => {
           />
         </div>
 
-        <div className="message_chat_entry">
-          <img
-            className="message_chat_entry_img"
-            src={"./Ellipse 12.svg"}
-            alt="search png"
-          />
-          <p className="message_chat_entry_text">Andrew Tate</p>
-        </div>
-
-        <div className="chat_box">
-          <div className="chat_box_wrapper">
-            <div className="chat_box_case">
-              <p className="chat_box_case_text">Jane</p>
-              <p className="chat_box_case_text1">1m</p>
-            </div>
-            <div className="chat_box_message">
-              <p className="chat_box_message_text">Hello, Good Morning</p>
+        <div>
+          {" "}
+          <div className="message_chat_entry">
+            <img
+              className="message_chat_entry_img"
+              src={"./Ellipse 12.svg"}
+              alt="search png"
+            />
+            <p className="message_chat_entry_text">Andrew Tate</p>
+          </div>
+          <div className="chat_box">
+            <div className="chat_box_wrapper">
+              <div className="chat_box_case">
+                <p className="chat_box_case_text">Jane</p>
+                <p className="chat_box_case_text1">1m</p>
+              </div>
+              <div className="chat_box_message">
+                <p className="chat_box_message_text">Hello, Good Morning</p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="chat_box1">
-          <div className="chat_box_case1">
-            <p className="chat_box_case_text2">Me</p>
-            <p className="chat_box_case_text3">1m</p>
-          </div>
-          <div className="chat_box_message1">
-            <p className="chat_box_message_text1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
-          </div>
-        </div>
-
-        <div className="chat_box2">
-          <div className="chat_box2_img"></div>
-          <div className="chat_box_frame">
-            <div className="chat_box_case2">
-              <p className="chat_box_case_text4">Jane</p>
-              <p className="chat_box_case_text5">1m</p>
+          <div className="chat_box1">
+            <div className="chat_box_case1">
+              <p className="chat_box_case_text2">Me</p>
+              <p className="chat_box_case_text3">1m</p>
             </div>
-            <div className="chat_box_message2">
-              <p className="chat_box_message_text2">
+            <div className="chat_box_message1">
+              <p className="chat_box_message_text1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="chat_input_field_case">
-          <input type="text" className="chat_input_field" />
-          <a className="chat_input_field_wrapper">
-            <h6 className="chat_input_field_text">Send</h6>
-          </a>
-          <img
-            className="chat_input_field_img"
-            src={"./attach-circle.svg"}
-            alt="search png"
-          />
+          <div className="chat_box2">
+            <div className="chat_box2_img"></div>
+            <div className="chat_box_frame">
+              <div className="chat_box_case2">
+                <p className="chat_box_case_text4">Jane</p>
+                <p className="chat_box_case_text5">1m</p>
+              </div>
+              <div className="chat_box_message2">
+                <p className="chat_box_message_text2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="chat_input_field_case">
+            <input type="text" className="chat_input_field" />
+            <a className="chat_input_field_wrapper">
+              <h6 className="chat_input_field_text">Send</h6>
+            </a>
+            <img
+              className="chat_input_field_img"
+              src={"./attach-circle.svg"}
+              alt="search png"
+            />
+          </div>
         </div>
       </div>
     </div>
