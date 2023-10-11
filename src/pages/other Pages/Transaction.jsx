@@ -78,7 +78,7 @@ const Transaction = () => {
               </div>
             </a>
 
-            <a className="home_setting nav-item">
+            <a href={"/profile"} className="home_setting nav-item">
               <div className="home_setting_case">
                 <img
                   src={"./setting-2.svg"}
@@ -156,8 +156,8 @@ const Transaction = () => {
         {/*----- first top -----*/}
 
         <div className="wallet_balance_wrapper">
-          <p className="wallet_balance_text">#32,000.00</p>
           <p className="wallet_balance_text1">Your balance</p>
+          <p className="wallet_balance_text">#32,000.00</p>
 
           <div className="wallet_balance_img_wrapper">
             <img
@@ -187,7 +187,7 @@ const Transaction = () => {
                   alt="wallet money png"
                 />
               </div>
-              <p className="wallet_withdraw_text">Top-up</p>
+              <p className="wallet_withdraw_text">Withdrawal</p>
             </div>
           </div>
         </div>
