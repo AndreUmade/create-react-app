@@ -1,147 +1,154 @@
-.profile_category_line1 {
-  position: absolute;
-  width: 184px;
-  height: 0px;
-  left: 270px;
-  top: 49.5px;
-
-  border: 1px solid #110b65;
-}
-
-.profile_photos_page {
-  position: absolute;
-  width: 68px;
-  height: 30px;
-  left: 293px;
-  top: 258px;
-
-  font-family: "Poppins";
+.profile2_category_text {
+  color: #707070;
+  font-family: Poppins;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  /* identical to box height */
-
-  color: #000000;
+  line-height: normal;
+  text-decoration: none;
 }
 
-.profile_videos_page {
-  position: absolute;
-  width: 58px;
-  height: 30px;
-  left: 657px;
-  top: 258px;
+.profile2_category_text1 {
+  color: #110b65;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
-  font-family: "Poppins";
+.profile2_category_line {
+  width: 120px;
+  height: 4px;
+  display: flex;
+  flex-shrink: 0;
+  stroke-width: 5px;
+  background-color: #110b65;
+  position: absolute;
+  top: 30px;
+  left: 130px;
+}
+
+.profile_debit {
+  width: 80%;
+  height: 100px;
+  flex-shrink: 0;
+  padding: 12px 30px;
+  padding-right: 30px;
+  position: relative;
+  left: 100px;
+  top: 100px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 3px rgba(116, 116, 116, 0.18);
+}
+
+.profile_debitcard {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  text-decoration: none;
+}
+
+.profile_debitcard_img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_debitcard_text {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
+  position: relative;
+  top: 10px;
+}
+
+.profile_debit_line {
+  width: 100%;
+  height: 2px;
+  flex-shrink: 0;
+  stroke-width: 0.5px;
+  background-color: rgba(86, 86, 86, 0.1);
+}
+
+.profile_withdraw {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.profile_withdraw_img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_withdraw_text {
+  color: #000;
+  font-family: Poppins;
   font-size: 20px;
-  line-height: 30px;
-  /* identical to box height */
-
-  color: #000000;
-}
-
-.profile_upload_main {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 15px;
-
-  position: absolute;
-  width: 255px;
-  height: 172px;
-  left: 293px;
-  top: 328px;
-}
-
-.profile_photos_case {
-  width: 255px;
-  height: 172px;
-
-  background: #fcfcfd;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.profile_photos_img {
-  position: absolute;
-  width: 52px;
-  height: 52px;
-  left: 102px;
-  top: 34px;
-}
-
-.profile_photos_text {
-  position: absolute;
-  width: 109px;
-  height: 36px;
-  left: 73px;
-  top: 101px;
-
-  font-family: "Poppins";
   font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: center;
-
-  color: #000000;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  top: 10px;
 }
 
-.profile_videos_main {
+.profile_debit_arrow {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 15px;
-
+  width: 24px;
+  height: 24px;
+  transform: rotate(-90deg);
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
   position: absolute;
-  width: 255px;
-  height: 172px;
-  left: 657px;
-  top: 328px;
+  right: 0px;
+  margin-right: 20px;
+}
+.profile_debit_arrow1 {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  transform: rotate(-90deg);
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  right: 0px;
+  margin-right: 20px;
 }
 
-.profile_videos_case {
-  width: 255px;
-  height: 172px;
-
-  background: #fcfcfd;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+@media screen and (max-width: 1200px) {
+  .profile_debit {
+    width: 70%;
+    height: 100px;
+    flex-shrink: 0;
+    position: relative;
+    top: 100px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 3px rgba(116, 116, 116, 0.18);
+    left: 100px;
+  }
 }
 
-.profile_videos_img {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 102px;
-  top: 34px;
-}
-
-.profile_videos_text {
-  position: absolute;
-  width: 106px;
-  height: 36px;
-  left: 75px;
-  top: 101px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: center;
-
-  color: #000000;
+@media screen and (max-width: 936px) {
+  .profile_debit {
+    width: 70%;
+    height: 142px;
+    flex-shrink: 0;
+    position: relative;
+    top: 300px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 3px rgba(116, 116, 116, 0.18);
+    left: auto;
+  }
 }

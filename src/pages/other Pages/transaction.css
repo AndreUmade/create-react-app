@@ -873,7 +873,7 @@
     flex-grow: 0;
   }
 
-  G .transaction_header_item6 {
+  .transaction_header_item6 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -889,6 +889,20 @@
 
     background: #000000;
     border-radius: 25px;
+  }
+
+  .transaction_header_item5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 134px;
+    height: 40px;
+    left: 20px;
+    top: 25px;
   }
 
   .transaction_header_item4 {
@@ -1298,12 +1312,13 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 2px;
+    padding-bottom: 300px;
 
     position: absolute;
     width: 40%;
     height: 583px;
     left: 10%;
-    top: 500px;
+    top: 550px;
     background: #ffffff;
   }
 

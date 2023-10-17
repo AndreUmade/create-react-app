@@ -5,7 +5,7 @@ const Chat2 = () => {
   const [showSidebar, setShowSidebar] = useState(true);
 
   const toggleSidebar = () => {
-    setShowSidebar((prevShowSidebar) => !prevShowSidebar);
+    setShowSidebar(!showSidebar);
   };
 
   return (
@@ -67,7 +67,7 @@ const Chat2 = () => {
               </div>
             </a>
 
-            <a href={"/community"} className="home_transact nav-item">
+            <a className="home_transact nav-item">
               <div className="home_transact_case">
                 <img
                   src={"./hierarchy.svg"}
@@ -78,7 +78,7 @@ const Chat2 = () => {
               </div>
             </a>
 
-            <a className="home_setting nav-item">
+            <a href={"/profile"} className="home_setting nav-item">
               <div className="home_setting_case">
                 <img
                   src={"./setting-2.svg"}

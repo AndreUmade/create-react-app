@@ -5,7 +5,7 @@ const Services = () => {
   const [showSidebar, setShowSidebar] = useState(true);
 
   const toggleSidebar = () => {
-    setShowSidebar((prevShowSidebar) => !prevShowSidebar);
+    setShowSidebar(!showSidebar);
   };
 
   return (

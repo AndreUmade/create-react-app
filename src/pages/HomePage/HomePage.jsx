@@ -5,13 +5,14 @@ const HomePage = () => {
   const [showSidebar, setShowSidebar] = useState(true);
 
   const toggleSidebar = () => {
-    setShowSidebar((prevShowSidebar) => !prevShowSidebar);
+    setShowSidebar(!showSidebar);
   };
 
   return (
     <div className="container-fluid">
       <div className="sidebar">
         <div className="hamburger-menu" onClick={toggleSidebar}>
+          {showSidebar ? "" : ""}
           <div className="hamburger-icon"></div>
           <div className="hamburger-icon"></div>
           <div className="hamburger-icon"></div>
@@ -67,7 +68,7 @@ const HomePage = () => {
               </div>
             </a>
 
-            <a href={"/community"} className="home_transact nav-item">
+            <a className="home_transact nav-item">
               <div className="home_transact_case">
                 <img
                   src={"./hierarchy.svg"}
@@ -78,7 +79,7 @@ const HomePage = () => {
               </div>
             </a>
 
-            <a className="home_setting nav-item">
+            <a href={"/profile"} className="home_setting nav-item">
               <div className="home_setting_case">
                 <img
                   src={"./setting-2.svg"}
@@ -92,7 +93,7 @@ const HomePage = () => {
         )}
       </div>
 
-      <div className={`main-container ${showSidebar ? "shift-container" : ""}`}>
+      <div className={"main-container"}>
         <div className="dashboard_main container-fluid">
           <div className="dashboard_text_case">
             <p className="dashboard_header1">Hi Jane,👋</p>
