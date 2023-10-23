@@ -299,10 +299,10 @@
     justify-content: center;
     align-items: center;
     gap: 27px;
-    width: 72%;
+    width: 80%;
     height: 134px;
     position: absolute;
-    left: 95px;
+    left: auto;
     top: 28%;
     overflow-x: scroll;
   }

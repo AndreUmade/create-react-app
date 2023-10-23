@@ -198,7 +198,7 @@ const Profile6 = () => {
             <p className="profile5_button_text">Add Bank Account</p>
           </a>
           <div className="profile4_addedcard">
-            <p className="profile4_addedcard_text">Withdrawal Account</p>
+            <p className="profile6_addedcard_text">Withdrawal Account</p>
             <div className="profile4_digit_input">
               <div className="profile4_digit">
                 <p className="profile4_digit_text">**** *** 676</p>
