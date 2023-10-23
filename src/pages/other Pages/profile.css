@@ -485,7 +485,7 @@
 
   .profile_firstname_input {
     display: flex;
-    padding: 12px 210px 12px 20px;
+    padding: 12px 60px 12px 20px;
     align-items: center;
     gap: 14px;
     width: 100%;
@@ -515,7 +515,7 @@
 
   .profile_lastname_input {
     display: flex;
-    padding: 12px 210px 12px 20px;
+    padding: 12px 60px 12px 20px;
     align-items: center;
     gap: 14px;
     width: 100%;
@@ -547,7 +547,7 @@
   .profile_email_input {
     display: flex;
     width: 644px;
-    padding: 12px 210px 12px 20px;
+    padding: 12px 60px 12px 20px;
     align-items: center;
     gap: 14px;
     width: 100%;
@@ -579,7 +579,7 @@
   .profile_phone_input {
     display: flex;
     width: 645px;
-    padding: 12px 210px 12px 20px;
+    padding: 12px 60px 12px 20px;
     align-items: center;
     gap: 14px;
     width: 100%;
@@ -794,7 +794,7 @@
 
   .profile_firstname_input {
     display: flex;
-    padding: 12px 210px 12px 20px;
+    padding: 12px 60px 12px 20px;
     align-items: center;
     gap: 14px;
     width: 100%;
@@ -824,7 +824,7 @@
 
   .profile_lastname_input {
     display: flex;
-    padding: 12px 210px 12px 20px;
+    padding: 12px 60px 12px 20px;
     align-items: center;
     gap: 14px;
     width: 100%;
@@ -856,7 +856,7 @@
   .profile_email_input {
     display: flex;
     width: 644px;
-    padding: 12px 210px 12px 20px;
+    padding: 12px 60px 12px 20px;
     align-items: center;
     gap: 14px;
     width: 100%;
@@ -888,7 +888,7 @@
   .profile_phone_input {
     display: flex;
     width: 645px;
-    padding: 12px 210px 12px 20px;
+    padding: 12px 60px 12px 20px;
     align-items: center;
     gap: 14px;
     width: 100%;

@@ -1,7 +1,7 @@
-import "./profile2.css";
+import "./profile6.css";
 import React, { useState } from "react";
 
-const Profile2 = () => {
+const Profile6 = () => {
   const [showSidebar, setShowSidebar] = useState(true);
 
   const toggleSidebar = () => {
@@ -163,7 +163,7 @@ const Profile2 = () => {
         </div>
 
         {/*-----second top -----*/}
-        <div className="profile_debit">
+        <div className="profile3_debit">
           <a href={"/profile3"} className="profile_debitcard">
             <img
               className="profile_debitcard_img"
@@ -188,15 +188,34 @@ const Profile2 = () => {
             />
             <p className="profile_withdraw_text">Withdrawal Settings</p>
             <img
-              className="profile_debit_arrow1"
+              className="profile5_debit_arrow1"
               src={process.env.PUBLIC_URL + "arrow-down.svg"}
               alt="arrow png"
             />
           </a>
+
+          <a className="profile5_button">
+            <p className="profile5_button_text">Add Bank Account</p>
+          </a>
+          <div className="profile4_addedcard">
+            <p className="profile4_addedcard_text">Withdrawal Account</p>
+            <div className="profile4_digit_input">
+              <div className="profile4_digit">
+                <p className="profile4_digit_text">**** *** 676</p>
+              </div>
+              <div className="profile6_date">
+                <p className="profile4_date_text">Access Bank</p>
+              </div>
+            </div>
+
+            <a href={"/profile3"} className="profile4_addedcard_button">
+              <p className="profile4_addedcard_buttontext">Remove Account</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Profile2;
+export default Profile6;

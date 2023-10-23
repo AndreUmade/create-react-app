@@ -1,11 +1,16 @@
-import "./profile2.css";
+import "./profile5.css";
 import React, { useState } from "react";
 
-const Profile2 = () => {
+const Profile5 = () => {
   const [showSidebar, setShowSidebar] = useState(true);
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
+  };
+  const [isDivVisible, setDivVisibility] = useState(false);
+
+  const toggleVisibility = () => {
+    setDivVisibility(!isDivVisible);
   };
 
   return (
@@ -163,7 +168,7 @@ const Profile2 = () => {
         </div>
 
         {/*-----second top -----*/}
-        <div className="profile_debit">
+        <div className="profile5_debit">
           <a href={"/profile3"} className="profile_debitcard">
             <img
               className="profile_debitcard_img"
@@ -188,15 +193,50 @@ const Profile2 = () => {
             />
             <p className="profile_withdraw_text">Withdrawal Settings</p>
             <img
-              className="profile_debit_arrow1"
+              className="profile5_debit_arrow1"
               src={process.env.PUBLIC_URL + "arrow-down.svg"}
               alt="arrow png"
             />
           </a>
+
+          <a onClick={toggleVisibility} className="profile5_button">
+            {isDivVisible ? "" : ""}
+            <p className="profile5_button_text">Add Bank Account</p>
+          </a>
+          {isDivVisible && (
+            <div className="add_card_wrapper">
+              {/* Content to be displayed when the div is visible */}
+              <p className="add_card_text">Withdrawal Account</p>
+              <div className="profile5_input_wrapper">
+                <input
+                  className="profile5_account_input"
+                  type="text"
+                  id="account-number"
+                  name="account-number"
+                  placeholder="Enter your account number"
+                  required
+                />
+                <select
+                  className="profile5_account_input1"
+                  id="select-option"
+                  name="select-option"
+                >
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                  <option value="option4">Option 4</option>
+                </select>
+              </div>
+
+              <a href={"/profile6"} className="profile5_account_button">
+                <p className="profile5_account_buttontext">Add Account</p>
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>
   );
 };
 
-export default Profile2;
+export default Profile5;

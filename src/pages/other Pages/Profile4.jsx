@@ -1,7 +1,7 @@
-import "./profile2.css";
+import "./profile4.css";
 import React, { useState } from "react";
 
-const Profile2 = () => {
+const Profile4 = () => {
   const [showSidebar, setShowSidebar] = useState(true);
 
   const toggleSidebar = () => {
@@ -163,40 +163,43 @@ const Profile2 = () => {
         </div>
 
         {/*-----second top -----*/}
-        <div className="profile_debit">
-          <a href={"/profile3"} className="profile_debitcard">
+        <div className="profile3_debit">
+          <a href={"/profile2"} className="profile3_debitcard">
             <img
-              className="profile_debitcard_img"
+              className="profile3_debitcard_img"
               src={process.env.PUBLIC_URL + "cards.svg"}
               alt="card png"
             />
-            <p className="profile_debitcard_text">Debit Cards</p>
+            <p className="profile3_debitcard_text">Debit Cards</p>
             <img
-              className="profile_debit_arrow"
+              className="profile3_debit_arrow"
               src={process.env.PUBLIC_URL + "arrow-down.svg"}
               alt="arrow png"
             />
+          </a>{" "}
+          <div className="profile3_debit_line"></div>
+          <a href={"/profile3"} className="profile3_button">
+            <p className="profile3_button_text">Add Card</p>
           </a>
+          <div className="profile4_addedcard">
+            <p className="profile4_addedcard_text">Debit Cards</p>
+            <div className="profile4_digit_input">
+              <div className="profile4_digit">
+                <p className="profile4_digit_text">**** **** **** 3554</p>
+              </div>
+              <div className="profile4_date">
+                <p className="profile4_date_text">12/22</p>
+              </div>
+            </div>
 
-          <div className="profile_debit_line"></div>
-
-          <a href={"/profile5"} className="profile_withdraw">
-            <img
-              className="profile_withdraw_img"
-              src={process.env.PUBLIC_URL + "card-receive3.svg"}
-              alt="withdraw png"
-            />
-            <p className="profile_withdraw_text">Withdrawal Settings</p>
-            <img
-              className="profile_debit_arrow1"
-              src={process.env.PUBLIC_URL + "arrow-down.svg"}
-              alt="arrow png"
-            />
-          </a>
+            <a href={"/profile3"} className="profile4_addedcard_button">
+              <p className="profile4_addedcard_buttontext">Remove Card</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Profile2;
+export default Profile4;

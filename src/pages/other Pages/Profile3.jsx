@@ -233,7 +233,7 @@ const Profile3 = () => {
                 </div>
               </div>
 
-              <a className="carddetails_button">
+              <a href={"/profile4"} className="carddetails_button">
                 <p className="carddetails_button_text">Add Card</p>
               </a>
               <a className="carddetails_text">Is my card details safe?</a>

@@ -1,0 +1,310 @@
+.profile5_debit {
+  width: 80%;
+  height: 700px;
+  flex-shrink: 0;
+  padding: 12px 30px;
+  padding-right: 30px;
+  position: relative;
+  left: 100px;
+  top: 100px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 3px rgba(116, 116, 116, 0.18);
+  margin-bottom: 300px;
+}
+
+.profile_debitcard {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  text-decoration: none;
+}
+
+.profile_debitcard_img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_debitcard_text {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  top: 10px;
+}
+
+.profile_debit_line {
+  width: 100%;
+  height: 2px;
+  flex-shrink: 0;
+  stroke-width: 0.5px;
+  background-color: rgba(86, 86, 86, 0.1);
+}
+
+.profile_withdraw {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.profile_withdraw_img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_withdraw_text {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  top: 10px;
+}
+
+.profile_debit_arrow {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  right: 0px;
+  margin-right: 20px;
+}
+.profile5_debit_arrow1 {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  right: 0px;
+  margin-right: 20px;
+}
+
+.profile5_button {
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  background: #110b65;
+  position: relative;
+  top: 70px;
+  left: -200px;
+}
+
+.profile5_button_text {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  top: 10px;
+}
+
+.profile5_input_wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+.profile5_account_input {
+  display: flex;
+  width: 100%;
+  padding: 12px 20px 12px 20px;
+  align-items: center;
+  gap: 14px;
+  border-radius: 8px;
+  border: 0.3px solid #e6eaee;
+  background: #fff;
+  box-shadow: 0px 1px 8px 0px rgba(86, 86, 86, 0.1);
+}
+
+.profile5_account_input1 {
+  display: flex;
+  width: 100%;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 54px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 0.3px solid #e6eaee;
+  background: #fff;
+  box-shadow: 0px 1px 8px 0px rgba(86, 86, 86, 0.1);
+}
+
+.profile5_account_button {
+  display: inline-flex;
+  padding: 12px 84px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 70%;
+  border-radius: 4px;
+  background: #17191c;
+  position: relative;
+  text-decoration: none;
+  top: 80px;
+  left: 15%;
+}
+.profile5_account_buttontext {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  text-decoration: none;
+  top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .profile5_debit {
+    width: 70%;
+    height: 700px;
+    flex-shrink: 0;
+    position: relative;
+    top: 100px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 3px rgba(116, 116, 116, 0.18);
+    left: 100px;
+  }
+  .profile5_account_button {
+    display: inline-flex;
+    padding: 12px 84px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    border-radius: 4px;
+    background: #17191c;
+    position: relative;
+    text-decoration: none;
+    top: 40px;
+    left: 10%;
+  }
+  .profile5_account_buttontext {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    text-decoration: none;
+    top: 10px;
+  }
+
+  .profile5_button {
+    display: inline-flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #110b65;
+    position: relative;
+    top: 70px;
+  }
+
+  .profile5_button_text {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 936px) {
+  .profile5_debit {
+    width: 70%;
+    height: 700px;
+    flex-shrink: 0;
+    position: relative;
+    top: 300px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 3px rgba(116, 116, 116, 0.18);
+    left: auto;
+    margin-bottom: 500px;
+  }
+
+  .profile5_account_button {
+    display: inline-flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    border-radius: 4px;
+    background: #17191c;
+    position: relative;
+    text-decoration: none;
+    top: 40px;
+    left: 10%;
+  }
+  .profile5_account_buttontext {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    text-decoration: none;
+    top: 10px;
+  }
+
+  .profile5_button {
+    display: inline-flex;
+    padding: 12px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #110b65;
+    top: 70px;
+    left: auto;
+  }
+  .profile5_button_text {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    top: 10px;
+  }
+}
