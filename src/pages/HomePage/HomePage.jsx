@@ -18,77 +18,86 @@ const HomePage = () => {
           <div className="hamburger-icon"></div>
         </div>
         {showSidebar && (
-          <div className="sidebar-nav">
-            <img
-              className="home_logo nav-item"
-              src={"./logo 2.svg"}
-              alt="logo"
-            />
-            <a href={"/home"} className="home_dashboard nav-item">
-              <div className="home_dashboard_case">
-                <img
-                  src={"./dashboard.svg"}
-                  className="home_dashboard_img"
-                  alt="logo"
-                />
-                <p className="home_dashboard_text">Dashboard</p>
-              </div>
-            </a>
+          <div className="sidenav_container">
+            <div className="sidebar-nav">
+              <img
+                className="home_logo nav-item"
+                src={"./logo 2.svg"}
+                alt="logo"
+              />
+              <a href={"/home"} className="home_dashboard nav-item">
+                <div className="home_dashboard_case">
+                  <img
+                    src={"./dashboard.svg"}
+                    className="home_dashboard_img"
+                    alt="logo"
+                  />
+                  <p className="home_dashboard_text">Dashboard</p>
+                </div>
+              </a>
 
-            <a href={"/services"} className="home_profile nav-item">
-              <div className="home_profile_case">
-                <img
-                  src={"./task-square1.svg"}
-                  className="home_profile_img"
-                  alt="dashboard"
-                />
-                <p className="home_profile_text">Services</p>
-              </div>
-            </a>
+              <a href={"/services"} className="home_profile nav-item">
+                <div className="home_profile_case">
+                  <img
+                    src={"./task-square1.svg"}
+                    className="home_profile_img"
+                    alt="dashboard"
+                  />
+                  <p className="home_profile_text">Services</p>
+                </div>
+              </a>
 
-            <a href={"/chat"} className="home_request nav-item">
-              <div className="home_request_case">
-                <img
-                  src={"./request.svg"}
-                  className="home_request_img"
-                  alt="profile"
-                />
-                <p className="home_request_text">Chats</p>
-              </div>
-            </a>
+              <a href={"/chat"} className="home_request nav-item">
+                <div className="home_request_case">
+                  <img
+                    src={"./messages.svg"}
+                    className="home_request_img"
+                    alt="profile"
+                  />
+                  <p className="home_request_text">Chats</p>
+                </div>
+              </a>
 
-            <a href={"/wallet"} className="home_chat nav-item">
-              <div className="home_chat_case">
-                <img
-                  src={"./messages.svg"}
-                  className="home_chat_img"
-                  alt="chat"
-                />
-                <p className="home_chat_text">Transaction</p>
-              </div>
-            </a>
+              <a
+                href={"/wallet"}
+                id="home_trans"
+                className="home_chat nav-item"
+              >
+                <div className="home_chat_case" id="home_trans_case">
+                  <img
+                    id="home_trans_case_img"
+                    src={"./receipt-text2.svg"}
+                    className="home_chat_img"
+                    alt="chat"
+                  />
+                  <p className="home_chat_text" id="home_trans_case_text">
+                    Transaction
+                  </p>
+                </div>
+              </a>
 
-            <a className="home_transact nav-item">
-              <div className="home_transact_case">
-                <img
-                  src={"./hierarchy.svg"}
-                  className="home_transact_img"
-                  alt="transact"
-                />
-                <p className="home_transact_text">Community</p>
-              </div>
-            </a>
+              <a className="home_transact nav-item">
+                <div className="home_transact_case">
+                  <img
+                    src={"./hierarchy.svg"}
+                    className="home_transact_img"
+                    alt="transact"
+                  />
+                  <p className="home_transact_text">Community</p>
+                </div>
+              </a>
 
-            <a href={"/profile"} className="home_setting nav-item">
-              <div className="home_setting_case">
-                <img
-                  src={"./setting-2.svg"}
-                  className="home_setting_img"
-                  alt="setting"
-                />
-                <p className="home_setting_text">Settings</p>
-              </div>
-            </a>
+              <a href={"/profile"} className="home_setting nav-item">
+                <div className="home_setting_case" id="home_setting_case">
+                  <img
+                    src={"./setting-2.svg"}
+                    className="home_setting_img"
+                    alt="setting"
+                  />
+                  <p className="home_setting_text">Settings</p>
+                </div>
+              </a>
+            </div>
           </div>
         )}
       </div>
@@ -116,7 +125,7 @@ const HomePage = () => {
             />
           </a>
 
-          <div className="dashboard_notif">
+          <a href={"/profile"} className="dashboard_notif">
             <img
               className="dashboard_notif_img"
               src="./Frame 258.svg"
@@ -135,7 +144,7 @@ const HomePage = () => {
                 <a className="notif_dropdown_style" href={"/profile"}>
                   <img
                     className="notif_dropdown_img"
-                    src={"./profile dropdown.svg"}
+                    src={"./profile new1.svg"}
                     alt="padlock png"
                   />
                   <p className="notif_dropdown_text">Profile</p>
@@ -144,14 +153,14 @@ const HomePage = () => {
                 <a className="notif_dropdown_style1" href={"/signup"}>
                   <img
                     className="notif_dropdown_img1"
-                    src={process.env.PUBLIC_URL + "logout dropdown.svg"}
+                    src={process.env.PUBLIC_URL + "logout.svg"}
                     alt="logout png"
                   />
                   <p className="notif_dropdown_text1">Log out</p>
                 </a>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <div className="responsive-container ">

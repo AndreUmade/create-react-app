@@ -1008,4 +1008,30 @@
     left: 30px;
     top: 12px;
   }
+
+  .home_request_cases {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    position: absolute;
+    width: 102px;
+    height: 24px;
+    left: 55px;
+    top: 8px;
+  }
+
+  .home_request_active {
+    width: 240px;
+    height: 38px;
+    position: relative;
+    background: #ffffff;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
 }
