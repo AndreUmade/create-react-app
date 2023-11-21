@@ -7,6 +7,23 @@ const Profile = () => {
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
+
+  const [imageSrc, setImageSrc] = useState(null);
+
+  const handleImageUpload = (event) => {
+    const file = event.target.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = (e) => {
+        setImageSrc(e.target.result);
+      };
+
+      reader.readAsDataURL(file);
+    }
+  };
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -90,7 +107,7 @@ const Profile = () => {
               </div>
             </a>
 
-            <a href={"/community"} className="home_transact nav-item">
+            <a href={"/"} className="home_transact nav-item">
               <div className="home_transact_case">
                 <img
                   src={"./hierarchy.svg"}
@@ -191,6 +208,21 @@ const Profile = () => {
           <p className="category_main_text">Personal Information</p>
           <div className="category_input">
             <div className="category_input_case">
+              {" "}
+              <div>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={handleImageUpload}
+                />
+                {imageSrc && (
+                  <img
+                    src={imageSrc}
+                    alt="Uploaded"
+                    style={{ maxWidth: "100%", maxHeight: "300px" }}
+                  />
+                )}
+              </div>
               <img
                 className="category_input_img"
                 src={process.env.PUBLIC_URL + "camera.svg"}

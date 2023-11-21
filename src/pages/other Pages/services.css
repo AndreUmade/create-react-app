@@ -79,9 +79,15 @@
   gap: 24px;
   width: 350px;
   height: 276px;
-  position: absolute;
+  position: relative;
   left: 18%;
-  top: 270px;
+  top: 200px;
+  margin-bottom: 500px;
+}
+
+.recommended_main_frame {
+  margin-bottom: 300px;
+  position: relative;
 }
 
 .dashboard_Services_text {
@@ -290,6 +296,7 @@
     position: absolute;
     left: 250px;
     top: 290px;
+    margin-bottom: 500px;
   }
 }
 
@@ -327,6 +334,7 @@
     position: absolute;
     left: 18%;
     top: 0px;
+    margin-bottom: 500px;
   }
 
   .service_saved_text {
@@ -412,5 +420,113 @@
     position: relative;
     top: -30px;
     line-height: 22px; /* 157.143% */
+  }
+  .category_all_text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .home_dashboard1 {
+    width: 240px;
+    height: 30px;
+    position: relative;
+    /* Inside auto layout */
+    z-index: 2;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .home_dashboard_text1 {
+    width: 90px;
+    height: 24px;
+
+    color: #b9b9b9;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .home_dashboard_case {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    position: absolute;
+    width: 126px;
+    height: 24px;
+    left: 55px;
+    top: 5px;
+  }
+
+  .home_profile1 {
+    width: 240px;
+    height: 38px;
+    position: relative;
+    background: #ffffff;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .home_profile_case1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    background: #fcfcfd;
+    position: absolute;
+    width: 86px;
+    height: 24px;
+    left: 55px;
+    top: 5px;
+  }
+
+  .home_profile_text1 {
+    width: 50px;
+    height: 24px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #110b65;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .home_setting_cases {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    position: absolute;
+    width: 102px;
+    height: 24px;
+    left: 55px;
+    top: -20px;
   }
 }

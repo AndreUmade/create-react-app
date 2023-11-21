@@ -969,4 +969,18 @@
     top: 8px;
     position: relative;
   }
+
+  .home_setting_case {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    position: absolute;
+    width: 102px;
+    height: 24px;
+    left: 55px;
+    top: -10px;
+  }
 }

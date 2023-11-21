@@ -113,7 +113,7 @@ const Profile3 = () => {
             placeholder="Search.."
           ></input>
 
-          <a className="dashboard_bell" href={"/profile"}>
+          <a className="dashboard_bell" href={"/chat"}>
             <img
               className="dashboard_bell_img"
               src="./notification.svg"
@@ -121,7 +121,7 @@ const Profile3 = () => {
             />
           </a>
 
-          <div className="dashboard_notif">
+          <a href={"/profile"} className="dashboard_notif">
             <img
               className="dashboard_notif_img"
               src="./Frame 258.svg"
@@ -140,7 +140,7 @@ const Profile3 = () => {
                 <a className="notif_dropdown_style" href={"/profile"}>
                   <img
                     className="notif_dropdown_img"
-                    src={"./profile dropdown.svg"}
+                    src={"./profile new1.svg"}
                     alt="padlock png"
                   />
                   <p className="notif_dropdown_text">Profile</p>
@@ -149,14 +149,14 @@ const Profile3 = () => {
                 <a className="notif_dropdown_style1" href={"/signup"}>
                   <img
                     className="notif_dropdown_img1"
-                    src={process.env.PUBLIC_URL + "logout dropdown.svg"}
+                    src={process.env.PUBLIC_URL + "logout.svg"}
                     alt="logout png"
                   />
                   <p className="notif_dropdown_text1">Log out</p>
                 </a>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         {/*----- first top -----*/}
         <div className="category_wrapper">

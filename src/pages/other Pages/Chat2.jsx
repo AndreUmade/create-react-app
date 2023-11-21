@@ -56,14 +56,17 @@ const Chat2 = () => {
               </div>
             </a>
 
-            <a href={"/wallet"} className="home_chat nav-item">
-              <div className="home_chat_case">
+            <a href={"/wallet"} id="home_trans" className="home_chat nav-item">
+              <div className="home_chat_case" id="home_trans_case">
                 <img
-                  src={"./messages.svg"}
+                  id="home_trans_case_img"
+                  src={"./receipt-text2.svg"}
                   className="home_chat_img"
                   alt="chat"
                 />
-                <p className="home_chat_text">Transaction</p>
+                <p className="home_chat_text" id="home_trans_case_text">
+                  Transaction
+                </p>
               </div>
             </a>
 

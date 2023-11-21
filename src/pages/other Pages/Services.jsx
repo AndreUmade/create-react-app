@@ -48,7 +48,7 @@ const Services = () => {
             <a href={"/chat"} className="home_request nav-item">
               <div className="home_request_case">
                 <img
-                  src={"./request.svg"}
+                  src={"./messages.svg"}
                   className="home_request_img"
                   alt="profile"
                 />
@@ -56,14 +56,17 @@ const Services = () => {
               </div>
             </a>
 
-            <a href={"/wallet"} className="home_chat nav-item">
-              <div className="home_chat_case">
+            <a href={"/wallet"} id="home_trans" className="home_chat nav-item">
+              <div className="home_chat_case" id="home_trans_case">
                 <img
-                  src={"./messages.svg"}
+                  id="home_trans_case_img"
+                  src={"./receipt-text2.svg"}
                   className="home_chat_img"
                   alt="chat"
                 />
-                <p className="home_chat_text">Transaction</p>
+                <p className="home_chat_text" id="home_trans_case_text">
+                  Transaction
+                </p>
               </div>
             </a>
 
@@ -78,8 +81,8 @@ const Services = () => {
               </div>
             </a>
 
-            <a className="home_setting nav-item">
-              <div className="home_setting_case">
+            <a href={"/profile"} className="home_setting nav-item">
+              <div className="home_setting_cases">
                 <img
                   src={"./setting-2.svg"}
                   className="home_setting_img"
@@ -116,7 +119,7 @@ const Services = () => {
             />
           </a>
 
-          <div className="dashboard_notif">
+          <a href={"/profile"} className="dashboard_notif">
             <img
               className="dashboard_notif_img"
               src="./Frame 258.svg"
@@ -135,7 +138,7 @@ const Services = () => {
                 <a className="notif_dropdown_style" href={"/profile"}>
                   <img
                     className="notif_dropdown_img"
-                    src={"./profile dropdown.svg"}
+                    src={"./profile new1.svg"}
                     alt="padlock png"
                   />
                   <p className="notif_dropdown_text">Profile</p>
@@ -144,14 +147,14 @@ const Services = () => {
                 <a className="notif_dropdown_style1" href={"/signup"}>
                   <img
                     className="notif_dropdown_img1"
-                    src={process.env.PUBLIC_URL + "logout dropdown.svg"}
+                    src={process.env.PUBLIC_URL + "logout.svg"}
                     alt="logout png"
                   />
                   <p className="notif_dropdown_text1">Log out</p>
                 </a>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         {/*----- first top -----*/}
         <div className="responsive-container1">
